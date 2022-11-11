@@ -9,7 +9,67 @@ RSpec.describe 'Recipes API' do
     thai_recipes = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
+    expect(thai_recipes).to be_a Hash
 
-    require 'pry' ; binding.pry
+    thai_recipes[:data].each do |recipe|
+      expect(recipe).to have_key(:id)
+      expect(recipe[:id]).to eq('null')
+
+      expect(recipe).to have_key(:type)
+      expect(recipe[:type]).to eq('recipe')
+
+      expect(recipe).to have_key(:attributes)
+      expect(recipe[:attributes].count).to eq(4)
+
+      expect(recipe[:attributes]).to have_key(:title)
+      expect(recipe[:attributes][:title]).to be_a String
+
+      expect(recipe[:attributes]).to have_key(:url)
+      expect(recipe[:attributes][:url]).to be_a String
+
+      expect(recipe[:attributes]).to have_key(:country)
+      expect(recipe[:attributes][:country]).to be_a String
+      expect(recipe[:attributes][:country]).to eq('thailand')
+
+      expect(recipe[:attributes]).to have_key(:image)
+      expect(recipe[:attributes][:image]).to be_a String
+    end
+  end
+
+  it 'send back an empty array if the search parameter is an empty string' do
+    recipes = create_list(:recipe, 3)
+
+    get '/api/v1/recipes?country=""'
+    result = JSON.parse(response.body, symbolize_names: true)
+
+    expect(result[:data]).to eq([])
+  end
+
+  it 'send back an empty array if the search parameter does not exist or is mispelled' do
+    recipes = create_list(:recipe, 3, country: 'germany')
+
+    get '/api/v1/recipes?country=thailand'
+    result = JSON.parse(response.body, symbolize_names: true)
+    expect(result[:data]).to eq([])
+
+    get '/api/v1/recipes?country=gerrrrmany'
+    result = JSON.parse(response.body, symbolize_names: true)
+    expect(result[:data]).to eq([])
+  end
+
+  it 'will return the results if the search params are capitalized in any way' do
+    recipes = create_list(:recipe, 3, country: 'thailand')
+    recipes2 = create_list(:recipe, 3)
+
+    get '/api/v1/recipes?country=THAILand'
+    thai_recipes = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to be_successful
+    expect(thai_recipes).to be_a Hash
+    expect(thai_recipes[:data].count).to eq 3
+
+    thai_recipes[:data].each do |recipe|
+      expect(recipe[:attributes][:country]).to eq('thailand')
+    end
   end
 end
