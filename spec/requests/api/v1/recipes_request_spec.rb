@@ -41,7 +41,7 @@ RSpec.describe 'Recipes API' do
   end
 
   it 'send back an empty array if the search parameter does not exist or is mispelled', :vcr do
-    get '/api/v1/recipes?country='
+    get '/api/v1/recipes?country=zzzzzzzzz'
     result = JSON.parse(response.body, symbolize_names: true)
     expect(result[:data]).to eq([])
 
@@ -61,4 +61,43 @@ RSpec.describe 'Recipes API' do
       expect(recipe[:attributes][:country]).to eq('thailand')
     end
   end
+
+  it 'will return the results if the search params are a portion of the country name', :vcr do
+    get '/api/v1/recipes?country=thai'
+    thai_recipes = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to be_successful
+    expect(thai_recipes).to be_a Hash
+
+    thai_recipes[:data].each do |recipe|
+      expect(recipe[:attributes][:country]).to eq('thai')
+    end
+  end
+
+  it "will return a random country's recipes if search params are empty", :vcr do
+    get '/api/v1/recipes?country='
+    recipes = JSON.parse(response.body, symbolize_names: true)
+
+    expect(recipes[:data]).to be_an Array
+    recipes[:data].each do |recipe|
+      expect(recipe).to have_key(:id)
+      expect(recipe[:type]).to eq('recipe')
+      expect(recipe[:attributes]).to be_a Hash
+
+      expect(recipe).to have_key(:attributes)
+      expect(recipe[:attributes].count).to eq(4)
+
+      expect(recipe[:attributes]).to have_key(:title)
+      expect(recipe[:attributes][:title]).to be_a String
+
+      expect(recipe[:attributes]).to have_key(:url)
+      expect(recipe[:attributes][:url]).to be_a String
+
+      expect(recipe[:attributes]).to have_key(:country)
+      expect(recipe[:attributes][:country]).to be_a String
+
+      expect(recipe[:attributes]).to have_key(:image)
+      expect(recipe[:attributes][:image]).to be_a String
+    end
+end
 end
