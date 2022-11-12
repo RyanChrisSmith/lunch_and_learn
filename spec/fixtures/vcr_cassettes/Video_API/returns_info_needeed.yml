@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sat, 12 Nov 2022 15:22:51 GMT
+      - Sat, 12 Nov 2022 21:17:27 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -43,10 +43,10 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"0qxWwEy7qahbOzmIg2PdYSGPhbc\",\n
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"cOKtT-JhFBHJ2dResSf0S2b1Ejo\",\n
         \ \"nextPageToken\": \"CAEQAA\",\n  \"regionCode\": \"US\",\n  \"pageInfo\":
         {\n    \"totalResults\": 1000000,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
-        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"NvMvMCNSPoTN7h65oh1fiCMPo3k\",\n
+        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"Vr56HqSOxK0zQHjS_5D13B6vjKk\",\n
         \     \"id\": {\n        \"kind\": \"youtube#video\",\n        \"videoId\":
         \"nOpmGFkntb4\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
         \"2022-11-12T11:00:39Z\",\n        \"channelId\": \"UCBQjTfMEcxMlI49KCQAHwYQ\",\n
@@ -63,5 +63,5 @@ http_interactions:
         \       \"channelTitle\": \"2Passports 1Dream\",\n        \"liveBroadcastContent\":
         \"none\",\n        \"publishTime\": \"2022-11-12T11:00:39Z\"\n      }\n    }\n
         \ ]\n}\n"
-  recorded_at: Sat, 12 Nov 2022 15:22:51 GMT
+  recorded_at: Sat, 12 Nov 2022 21:17:27 GMT
 recorded_with: VCR 6.1.0

@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Favorites API' do
   it 'will create a favorite recipe with api key' do
     fav_params = {
-      "api_key": "b347e854e17cfd30c23c75b1a54d6ed2428073cd9caf94b6",
+      "api_key": "6fb80af5dec84d6bd700b59d24caab799ebfc721aebd7a05",
       "country": "thailand",
       "recipe_link": "https://www.tastingtable.com/.....",
       "recipe_title": "Crab Fried Rice (Khaao Pad Bpu)"
