@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sat, 12 Nov 2022 09:44:04 GMT
+      - Sat, 12 Nov 2022 15:22:51 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -43,25 +43,25 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"BRt3qu6MwlwHho8U5iieT-lz12I\",\n
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"0qxWwEy7qahbOzmIg2PdYSGPhbc\",\n
         \ \"nextPageToken\": \"CAEQAA\",\n  \"regionCode\": \"US\",\n  \"pageInfo\":
         {\n    \"totalResults\": 1000000,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
-        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"VJ8vh9PGCjSq-hQ8BFgrfvuzpZw\",\n
+        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"NvMvMCNSPoTN7h65oh1fiCMPo3k\",\n
         \     \"id\": {\n        \"kind\": \"youtube#video\",\n        \"videoId\":
-        \"0GDwDqfzWEE\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
-        \"2022-11-11T11:45:00Z\",\n        \"channelId\": \"UCO5IhWS7_CIU1HoAkffBzcg\",\n
-        \       \"title\": \"Vientiane, Laos - First Impressions - Not what I expected!!
-        \U0001F1F1\U0001F1E6\",\n        \"description\": \"Today is my first Day
-        in Vientiane, and my first time visiting Laos!! I am super excited to be exploring
-        Vientiane. I have always ...\",\n        \"thumbnails\": {\n          \"default\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/0GDwDqfzWEE/default.jpg\",\n
-        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/0GDwDqfzWEE/mqdefault.jpg\",\n
+        \"nOpmGFkntb4\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2022-11-12T11:00:39Z\",\n        \"channelId\": \"UCBQjTfMEcxMlI49KCQAHwYQ\",\n
+        \       \"title\": \"The BEST WAY to Travel Luang Prabang, LAOS \U0001F1F1\U0001F1E6\",\n
+        \       \"description\": \"Today we are off on another Laos adventure! We've
+        rented the most adorable and handy little electric car to take us around the
+        ...\",\n        \"thumbnails\": {\n          \"default\": {\n            \"url\":
+        \"https://i.ytimg.com/vi/nOpmGFkntb4/default.jpg\",\n            \"width\":
+        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
+        \           \"url\": \"https://i.ytimg.com/vi/nOpmGFkntb4/mqdefault.jpg\",\n
         \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/0GDwDqfzWEE/hqdefault.jpg\",\n
+        {\n            \"url\": \"https://i.ytimg.com/vi/nOpmGFkntb4/hqdefault.jpg\",\n
         \           \"width\": 480,\n            \"height\": 360\n          }\n        },\n
-        \       \"channelTitle\": \"keis one\",\n        \"liveBroadcastContent\":
-        \"none\",\n        \"publishTime\": \"2022-11-11T11:45:00Z\"\n      }\n    }\n
+        \       \"channelTitle\": \"2Passports 1Dream\",\n        \"liveBroadcastContent\":
+        \"none\",\n        \"publishTime\": \"2022-11-12T11:00:39Z\"\n      }\n    }\n
         \ ]\n}\n"
-  recorded_at: Sat, 12 Nov 2022 09:44:04 GMT
+  recorded_at: Sat, 12 Nov 2022 15:22:51 GMT
 recorded_with: VCR 6.1.0

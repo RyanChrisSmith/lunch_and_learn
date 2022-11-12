@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=81d26543&app_key=262130f91261a8e0ddf43423db417fec&q=zzzzzzzzz&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sat, 12 Nov 2022 15:22:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-1-125.ec2.internal/10.0.1.125
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - acf73d3fb9989640a3aafde8b62a467e
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Sat, 12 Nov 2022 15:22:48 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=81d26543&app_key=262130f91261a8e0ddf43423db417fec&q=gerrrrmany&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sat, 12 Nov 2022 15:22:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-1-36.ec2.internal/10.0.1.36
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - cd6896ca8c2f4ccd98a8a128e2a2d384
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Sat, 12 Nov 2022 15:22:48 GMT
+recorded_with: VCR 6.1.0

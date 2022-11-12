@@ -4,7 +4,7 @@
     response = conn.get("/api/recipes/v2?") do |req|
       req.params['q'] = "#{country}"
     end
-    final = JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   private
