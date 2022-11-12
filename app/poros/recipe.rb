@@ -1,4 +1,4 @@
-class Recipes 
+class Recipe
   attr_reader :title,
               :url,
               :image,

@@ -11,7 +11,7 @@ RSpec.describe 'Recipes PORO' do
       }
   }
 
-    final = Recipes.new(recipe, country)
+    final = Recipe.new(recipe, country)
 
     expect(final.title).to eq(recipe[:recipe][:label])
     expect(final.url).to eq(recipe[:recipe][:url])

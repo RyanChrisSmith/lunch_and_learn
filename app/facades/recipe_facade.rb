@@ -11,9 +11,10 @@ class RecipeFacade
   end
 
   private
+
   def self.find_recipes(results, country)
     results[:hits].map do |recipe|
-      Recipes.new(recipe, country)
+      Recipe.new(recipe, country)
     end
   end
 end

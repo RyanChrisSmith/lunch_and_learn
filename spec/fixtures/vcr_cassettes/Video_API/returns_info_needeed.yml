@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyCrvBsWIxIbXchl2G9X2IlgauIbU5Aw7jY&maxResults=1&part=snippet&q=laos&type=video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sat, 12 Nov 2022 09:44:04 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"BRt3qu6MwlwHho8U5iieT-lz12I\",\n
+        \ \"nextPageToken\": \"CAEQAA\",\n  \"regionCode\": \"US\",\n  \"pageInfo\":
+        {\n    \"totalResults\": 1000000,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
+        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"VJ8vh9PGCjSq-hQ8BFgrfvuzpZw\",\n
+        \     \"id\": {\n        \"kind\": \"youtube#video\",\n        \"videoId\":
+        \"0GDwDqfzWEE\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2022-11-11T11:45:00Z\",\n        \"channelId\": \"UCO5IhWS7_CIU1HoAkffBzcg\",\n
+        \       \"title\": \"Vientiane, Laos - First Impressions - Not what I expected!!
+        \U0001F1F1\U0001F1E6\",\n        \"description\": \"Today is my first Day
+        in Vientiane, and my first time visiting Laos!! I am super excited to be exploring
+        Vientiane. I have always ...\",\n        \"thumbnails\": {\n          \"default\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/0GDwDqfzWEE/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/0GDwDqfzWEE/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/0GDwDqfzWEE/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          }\n        },\n
+        \       \"channelTitle\": \"keis one\",\n        \"liveBroadcastContent\":
+        \"none\",\n        \"publishTime\": \"2022-11-11T11:45:00Z\"\n      }\n    }\n
+        \ ]\n}\n"
+  recorded_at: Sat, 12 Nov 2022 09:44:04 GMT
+recorded_with: VCR 6.1.0
