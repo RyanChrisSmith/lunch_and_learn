@@ -1,10 +1,10 @@
-class RecipeService
+ class RecipeService
 
   def self.find_recipes(country)
     response = conn.get("/api/recipes/v2?") do |req|
       req.params['q'] = "#{country}"
     end
-    JSON.parse(response.body, symbolize_names: true )
+    final = JSON.parse(response.body, symbolize_names: true)
   end
 
   private

@@ -1,8 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe 'Recipes API' do
+RSpec.describe 'Recipes API', :vcr do
   it 'can return an API call with only specific country related info' do
     response = RecipeService.find_recipes('thailand')
+
     expect(response).to be_a Hash
 
     response[:hits].each do |recipe|

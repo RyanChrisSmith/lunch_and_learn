@@ -1,10 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Recipes API' do
-  it 'sends a list of recipes from a specified country' do
-    recipes = create_list(:recipe, 5, country: 'thailand')
-    recipes2 = create_list(:recipe, 3)
-
+  it 'sends a list of recipes from a specified country', :vcr do
     get '/api/v1/recipes?country=thailand'
     thai_recipes = JSON.parse(response.body, symbolize_names: true)
 
@@ -36,19 +33,15 @@ RSpec.describe 'Recipes API' do
     end
   end
 
-  it 'send back an empty array if the search parameter is an empty string' do
-    recipes = create_list(:recipe, 3)
-
+  it 'send back an empty array if the search parameter is an empty string', :vcr do
     get '/api/v1/recipes?country=""'
     result = JSON.parse(response.body, symbolize_names: true)
 
     expect(result[:data]).to eq([])
   end
 
-  it 'send back an empty array if the search parameter does not exist or is mispelled' do
-    recipes = create_list(:recipe, 3, country: 'germany')
-
-    get '/api/v1/recipes?country=thailand'
+  it 'send back an empty array if the search parameter does not exist or is mispelled', :vcr do
+    get '/api/v1/recipes?country='
     result = JSON.parse(response.body, symbolize_names: true)
     expect(result[:data]).to eq([])
 
@@ -57,16 +50,12 @@ RSpec.describe 'Recipes API' do
     expect(result[:data]).to eq([])
   end
 
-  it 'will return the results if the search params are capitalized in any way' do
-    recipes = create_list(:recipe, 3, country: 'thailand')
-    recipes2 = create_list(:recipe, 3)
-
+  it 'will return the results if the search params are capitalized in any way', :vcr do
     get '/api/v1/recipes?country=THAILand'
     thai_recipes = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
     expect(thai_recipes).to be_a Hash
-    expect(thai_recipes[:data].count).to eq 3
 
     thai_recipes[:data].each do |recipe|
       expect(recipe[:attributes][:country]).to eq('thailand')
