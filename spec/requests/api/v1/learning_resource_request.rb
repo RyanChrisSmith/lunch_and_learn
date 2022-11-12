@@ -35,4 +35,13 @@ RSpec.describe 'Learning Resource API requests' do
     end
   end
 
+  it 'returns empty values when nothing matches the search query' do
+    get '/api/v1/learning_resources?country=sdlkfjalskjdflkasjdlfkj'
+    resources = JSON.parse(response.body, symbolize_names: true)
+
+    expect(resources[:data][:attributes][:country]).to eq("sdlkfjalskjdflkasjdlfkj")
+
+    expect(resources[:data][:attributes][:video]).to eq({})
+    expect(resources[:data][:attributes][:images]).to eq([])
+  end
 end

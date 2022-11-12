@@ -8,7 +8,7 @@ class User < ApplicationRecord
   has_secure_password
 
   after_validation(on: :create) do
-    self.api_key = SecureRandom.hex(64)
+    self.api_key = SecureRandom.hex(24)
   end
 
 end
