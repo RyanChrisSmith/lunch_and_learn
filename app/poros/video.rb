@@ -1,6 +1,6 @@
 class Video
-  attr_reader :title, 
-              :youtube_video_id 
+  attr_accessor :title,
+                :youtube_video_id
 
   def initialize(video_data)
     if video_data[:items] == []

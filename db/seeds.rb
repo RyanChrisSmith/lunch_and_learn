@@ -5,4 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create(name: 'Karl', email: 'karlis@home.com', password: 'password', password_confirmation: 'password', api_key: "b347e854e17cfd30c23c75b1a54d6ed2428073cd9caf94b6")
+User.create!(name: 'Karl', email: 'karlis@home.com', password: 'password', password_confirmation: 'password')
+user = User.create!(name: 'Test man', email: 'testsare@home.com', password: 'password', password_confirmation: 'password')
+Favorite.create!(api_key: user.api_key, country: 'thailand', recipe_link: "https://www.tastingtable.com/.....", recipe_title: 'Tom Kha Gai (Chicken in Coconut Soup)', user_id: user.id)
+Favorite.create!(api_key: user.api_key, country: 'mexico', recipe_link: "https://www.tastingtable.com/.....", recipe_title: 'Tacos', user_id: user.id)
+Favorite.create!(api_key: user.api_key, country: 'canada', recipe_link: "https://www.tastingtable.com/.....", recipe_title: 'Poutine fries', user_id: user.id)

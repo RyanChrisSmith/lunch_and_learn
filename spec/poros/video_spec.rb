@@ -32,4 +32,18 @@ RSpec.describe 'Video PORO' do
       expect(final.title).to eq(video_data[:items][0][:snippet][:title])
       expect(final.youtube_video_id).to eq(video_data[:items][0][:id][:videoId])
   end
+
+  xit 'will return an empty array if there are no videos in the data' do
+    video_data = {
+      :kind=>"youtube#searchListResponse",
+      :etag=>"BRt3qu6MwlwHho8U5iieT-lz12I",
+      :nextPageToken=>"CAEQAA",
+      :regionCode=>"US",
+      :pageInfo=>{:totalResults=>1000000, :resultsPerPage=>1},
+      :items=>[]
+    }
+
+    final = Video.new(video_data)
+    require 'pry' ; binding.pry
+  end
 end
