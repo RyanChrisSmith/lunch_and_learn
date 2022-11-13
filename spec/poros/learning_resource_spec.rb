@@ -4,7 +4,10 @@ RSpec.describe 'LearningResource PORO' do
   it 'will combine video, images, and country', :vcr do
     country = 'laos'
     video_data = VideoService.get_video(country)
-    video = Video.new(video_data)
+    video = video_data[:items].map do |data|
+      Video.new(data)
+    end
+
 
     response = ImagesService.get_images(country)
     images = response[:results].map do |image_data|
@@ -14,7 +17,8 @@ RSpec.describe 'LearningResource PORO' do
     final = LearningResource.new(country, video, images)
 
     expect(final.country).to eq(country)
-    expect(final.images).to eq(images)
     expect(final.video).to eq(video)
+    expect(final.images).to eq(images)
+    expect(final.instance_variables).to eq(%i[@country @video @images])
   end
 end

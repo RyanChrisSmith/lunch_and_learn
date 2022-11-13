@@ -41,7 +41,7 @@ RSpec.describe 'Learning Resource API requests' do
 
     expect(resources[:data][:attributes][:country]).to eq("sdlkfjalskjdflkasjdlfkj")
 
-    expect(resources[:data][:attributes][:video]).to eq({})
+    expect(resources[:data][:attributes][:video]).to eq([])
     expect(resources[:data][:attributes][:images]).to eq([])
   end
 end

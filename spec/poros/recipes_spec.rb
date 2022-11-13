@@ -17,5 +17,6 @@ RSpec.describe 'Recipes PORO' do
     expect(final.url).to eq(recipe[:recipe][:url])
     expect(final.image).to eq(recipe[:recipe][:image])
     expect(final.country).to eq(country)
+    expect(final.instance_variables).to eq(%i[@title @url @image @country])
   end
 end
