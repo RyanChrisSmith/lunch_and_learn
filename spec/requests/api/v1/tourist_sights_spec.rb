@@ -6,6 +6,16 @@ RSpec.describe 'tourist sights API' do
       get '/api/v1/tourist_sights?country=France'
 
       expect(response).to be_successful
+      sights = JSON.parse(response.body, symbolize_names: true)
+      expect(sights).to be_a Hash
+      expect(sights).to have_key(:data)
+      sights[:data].each do |sight|
+        require 'pry' ; binding.pry
+        expect(sight).to have_key(:id)
+        expect(sight[:id]).to be_a String
+        expect(sight[:id]).to be_a String
+
+      end
     end
   end
 end
