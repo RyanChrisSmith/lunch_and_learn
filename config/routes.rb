@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       resources :favorites, only: [:create, :index]
       resource :favorites, only: :destroy
       resources :tourist_sights, only: :index
+      resources :sessions
     end
   end
 end

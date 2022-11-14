@@ -40,14 +40,6 @@ RSpec.describe 'User API' do
       expect(created_user[:data][:attributes]).to have_key(:api_key)
       expect(created_user[:data][:attributes][:api_key]).to be_a String
     end
-
-    it 'can sign a registed user in' do
-      user_params =
-      {
-        "email": 'ronny@fantastic.com',
-        "password": 'password',
-      }
-    end
   end
 
   describe 'sad path' do
