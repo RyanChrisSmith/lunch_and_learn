@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 18:15:45 GMT
+      - Mon, 14 Nov 2022 18:20:43 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -670,10 +670,10 @@ http_interactions:
         and Jan Mayen Islands"],"latlng":[78.0,20.0]},{"name":{"common":"France","official":"French
         Republic","nativeName":{"fra":{"official":"République française","common":"France"}}},"capital":["Paris"],"altSpellings":["FR","French
         Republic","République française"],"latlng":[46.0,2.0]}]'
-  recorded_at: Mon, 14 Nov 2022 18:15:45 GMT
+  recorded_at: Mon, 14 Nov 2022 18:20:43 GMT
 - request:
     method: get
-    uri: https://restcountries.com/v3.1/name/Mauritania
+    uri: https://restcountries.com/v3.1/name/Monaco
     body:
       encoding: US-ASCII
       string: ''
@@ -690,7 +690,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 18:15:45 GMT
+      - Mon, 14 Nov 2022 18:20:43 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -698,37 +698,29 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1444'
+      - '1213'
     body:
       encoding: UTF-8
-      string: '[{"name":{"common":"Mauritania","official":"Islamic Republic of Mauritania","nativeName":{"ara":{"official":"الجمهورية
-        الإسلامية الموريتانية","common":"موريتانيا"}}},"tld":[".mr"],"cca2":"MR","ccn3":"478","cca3":"MRT","cioc":"MTN","independent":true,"status":"officially-assigned","unMember":true,"currencies":{"MRU":{"name":"Mauritanian
-        ouguiya","symbol":"UM"}},"idd":{"root":"+2","suffixes":["22"]},"capital":["Nouakchott"],"altSpellings":["MR","Islamic
-        Republic of Mauritania","al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah"],"region":"Africa","subregion":"Western
-        Africa","languages":{"ara":"Arabic"},"translations":{"ara":{"official":"الجمهورية
-        الإسلامية الموريتانية","common":"موريتانيا"},"bre":{"official":"Republik islamek
-        Maouritania","common":"Maouritania"},"ces":{"official":"Mauritánská islámská
-        republika","common":"Mauritánie"},"cym":{"official":"Islamic Republic of Mauritania","common":"Mauritania"},"deu":{"official":"Islamische
-        Republik Mauretanien","common":"Mauretanien"},"est":{"official":"Mauritaania
-        Islamivabariik","common":"Mauritaania"},"fin":{"official":"Mauritanian islamilainen
-        tasavalta","common":"Mauritania"},"fra":{"official":"République islamique
-        de Mauritanie","common":"Mauritanie"},"hrv":{"official":"Islamska Republika
-        Mauritanija","common":"Mauritanija"},"hun":{"official":"Mauritániai Iszlám
-        Köztársaság","common":"Mauritánia"},"ita":{"official":"Repubblica islamica
-        di Mauritania","common":"Mauritania"},"jpn":{"official":"モーリタニア·イスラム共和国","common":"モーリタニア"},"kor":{"official":"모리타니
-        이슬람 공화국","common":"모리타니"},"nld":{"official":"Islamitische Republiek Mauritanië","common":"Mauritanië"},"per":{"official":"جمهوری
-        اسلامی موریتانی","common":"موریتانی"},"pol":{"official":"Islamska Republika
-        Mauretańska","common":"Mauretania"},"por":{"official":"República Islâmica
-        da Mauritânia","common":"Mauritânia"},"rus":{"official":"Исламская Республика
-        Мавритания","common":"Мавритания"},"slk":{"official":"Mauritánska islamská
-        republika","common":"Mauritánia"},"spa":{"official":"República Islámica de
-        Mauritania","common":"Mauritania"},"swe":{"official":"Islamiska republiken
-        Mauretanien","common":"Mauretanien"},"tur":{"official":"Moritanya İslam Cumhuriyeti","common":"Moritanya"},"urd":{"official":"اسلامی
-        جمہوریہ موریتانیہ","common":"موریتانیہ"},"zho":{"official":"毛里塔尼亚伊斯兰共和国","common":"毛里塔尼亚"}},"latlng":[20.0,-12.0],"landlocked":false,"borders":["DZA","MLI","SEN","ESH"],"area":1030700.0,"demonyms":{"eng":{"f":"Mauritanian","m":"Mauritanian"},"fra":{"f":"Mauritanienne","m":"Mauritanien"}},"flag":"\uD83C\uDDF2\uD83C\uDDF7","maps":{"googleMaps":"https://goo.gl/maps/im2MmQ5jFjzxWBks5","openStreetMaps":"https://www.openstreetmap.org/relation/192763"},"population":4649660,"gini":{"2014":32.6},"fifa":"MTN","car":{"signs":["RIM"],"side":"right"},"timezones":["UTC"],"continents":["Africa"],"flags":{"png":"https://flagcdn.com/w320/mr.png","svg":"https://flagcdn.com/mr.svg"},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/mr.png","svg":"https://mainfacts.com/media/images/coats_of_arms/mr.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[18.07,-15.97]}}]'
-  recorded_at: Mon, 14 Nov 2022 18:15:45 GMT
+      string: '[{"name":{"common":"Monaco","official":"Principality of Monaco","nativeName":{"fra":{"official":"Principauté
+        de Monaco","common":"Monaco"}}},"tld":[".mc"],"cca2":"MC","ccn3":"492","cca3":"MCO","cioc":"MON","independent":true,"status":"officially-assigned","unMember":true,"currencies":{"EUR":{"name":"Euro","symbol":"€"}},"idd":{"root":"+3","suffixes":["77"]},"capital":["Monaco"],"altSpellings":["MC","Principality
+        of Monaco","Principauté de Monaco"],"region":"Europe","subregion":"Western
+        Europe","languages":{"fra":"French"},"translations":{"ara":{"official":"إمارة
+        موناكو","common":"موناكو"},"bre":{"official":"Priñselezh Monako","common":"Monako"},"ces":{"official":"Monacké
+        knížectví","common":"Monako"},"cym":{"official":"Principality of Monaco","common":"Monaco"},"deu":{"official":"Fürstentum
+        Monaco","common":"Monaco"},"est":{"official":"Monaco Vürstiriik","common":"Monaco"},"fin":{"official":"Monacon
+        ruhtinaskunta","common":"Monaco"},"fra":{"official":"Principauté de Monaco","common":"Monaco"},"hrv":{"official":"Kneževina
+        Monako","common":"Monako"},"hun":{"official":"Monacói Hercegség","common":"Monaco"},"ita":{"official":"Principato
+        di Monaco","common":"Principato di Monaco"},"jpn":{"official":"モナコ公国","common":"モナコ"},"kor":{"official":"모나코
+        공국","common":"모나코"},"nld":{"official":"Vorstendom Monaco","common":"Monaco"},"per":{"official":"شاهزاده‌نشین
+        موناکو","common":"موناکو"},"pol":{"official":"Księstwo Monako","common":"Monako"},"por":{"official":"Principado
+        do Mónaco","common":"Mónaco"},"rus":{"official":"Княжество Монако","common":"Монако"},"slk":{"official":"Monacké
+        kniežatstvo","common":"Monako"},"spa":{"official":"Principado de Mónaco","common":"Mónaco"},"swe":{"official":"Furstendömet
+        Monaco","common":"Monaco"},"tur":{"official":"Monako Prensliği","common":"Monako"},"urd":{"official":"جمہوریہ
+        مناکو","common":"موناکو"},"zho":{"official":"摩纳哥公国","common":"摩纳哥"}},"latlng":[43.73333333,7.4],"landlocked":false,"borders":["FRA"],"area":2.02,"demonyms":{"eng":{"f":"Monegasque","m":"Monegasque"},"fra":{"f":"Monégasque","m":"Monégasque"}},"flag":"\uD83C\uDDF2\uD83C\uDDE8","maps":{"googleMaps":"https://goo.gl/maps/DGpndDot28bYdXYn7","openStreetMaps":"https://www.openstreetmap.org/relation/1124039"},"population":39244,"car":{"signs":["MC"],"side":"right"},"timezones":["UTC+01:00"],"continents":["Europe"],"flags":{"png":"https://flagcdn.com/w320/mc.png","svg":"https://flagcdn.com/mc.svg"},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/mc.png","svg":"https://mainfacts.com/media/images/coats_of_arms/mc.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[43.73,7.42]},"postalCode":{"format":"#####","regex":"^(\\d{5})$"}}]'
+  recorded_at: Mon, 14 Nov 2022 18:20:43 GMT
 - request:
     method: get
-    uri: https://api.geoapify.com/v2/places?apiKey=3d00506398ea4d8684a8fe6459b71712&categories=tourism.sights&filter=circle:-12.0,20.0,20000
+    uri: https://api.geoapify.com/v2/places?apiKey=3d00506398ea4d8684a8fe6459b71712&categories=tourism.sights&filter=circle:7.4,43.73333333,20000
     body:
       encoding: US-ASCII
       string: ''
@@ -745,7 +737,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 18:15:46 GMT
+      - Mon, 14 Nov 2022 18:20:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -775,17 +767,177 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=c6trBUua9eO8r2x1KYFu7VfMsIsQefuN1E2adPwvRt7gsG6oIZp4zCITiu5OJZIXR%2B8jTJ5xcF%2Ba7r6ocS7FtDAyS%2BQy8rDeiJaL81512nn2jL0Qpz5P5KeklzrmnFi2Oio%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UOpUQatMTquRsS2LqHWgmNxgnOKxoby999y0Nv1yDJNzE2T%2FsjJnAcq5ubLUBLyITsWVVoAjIa4BwbEPDs%2B%2FAjlprC70cmribBFz5x6T%2Bc%2BRkogyttdR%2F7sNLLkMUFS3KB0%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 76a1bbff0cbeea9c-DFW
+      - 76a1c347b948b0e8-ATL
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: UTF-8
-      string: '{"type":"FeatureCollection","features":[]}'
-  recorded_at: Mon, 14 Nov 2022 18:15:46 GMT
+      string: '{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"Palais
+        Princier de Monaco","street":"Tunnel Rocher Palais","suburb":"Monaco-Ville","city":"Monaco","postcode":"98000","country":"Monaco","country_code":"mc","lon":7.41982340052926,"lat":43.731260199999994,"formatted":"Prince''s
+        Palace of Monaco, Tunnel Rocher Palais, 98000 Monaco, Monaco","address_line1":"Prince''s
+        Palace of Monaco","address_line2":"Tunnel Rocher Palais, 98000 Monaco, Monaco","categories":["building","building.historic","building.tourism","tourism","tourism.attraction","tourism.sights","tourism.sights.castle","wheelchair","wheelchair.limited"],"details":["details","details.contact","details.facilities","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Palais
+        Princier de Monaco","email":"visites@palais.mc","phone":"+377 93 25 18 31","osm_id":-393226,"name:de":"Fürstenpalast
+        in Monaco","name:en":"Prince''s Palace of Monaco","name:id":"Istana Pangeran
+        Monako","name:it":"Palazzo dei Principi di Monaco","name:ru":"Княжеский дворец
+        Монако","name:zh":"摩納哥親王宮","tourism":"attraction","website":"https://www.palais.mc/","building":"castle","historic":"castle","osm_type":"r","wikidata":"Q1164788","wikipedia":"en:Prince''s
+        Palace of Monaco","wheelchair":"limited","castle_type":"palace","opening_hours":"10:00-18:00;
+        Jul,Aug 10:00-19:00; Oct 17-Mar 25 off","opening_hours:covid19":"closed"}},"place_id":"51b264c32132ae1d4059b9e3156f9cdd4540f00101f9010a0006000000000092031950616c616973205072696e63696572206465204d6f6e61636f"},"geometry":{"type":"Point","coordinates":[7.42011311297499,43.73133648461175]}},{"type":"Feature","properties":{"name":"Centre
+        international d''art contemporain","street":"Rue de l''Hubac","suburb":"Carros-Village","city":"Carros","municipality":"Grasse","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06510","country":"France","country_code":"fr","lon":7.187009731322958,"lat":43.792557,"formatted":"Centre
+        international d''art contemporain, Rue de l''Hubac, 06510 Carros, France","address_line1":"Centre
+        international d''art contemporain","address_line2":"Rue de l''Hubac, 06510
+        Carros, France","categories":["building","building.historic","building.tourism","entertainment","entertainment.museum","tourism","tourism.sights","tourism.sights.castle"],"details":["details","details.contact","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Centre
+        international d''art contemporain","email":"ciac@ville-carros.fr","phone":"+33
+        4 93 29 37 97","osm_id":141550678,"name:fr":"Centre international d''art contemporain","tourism":"museum","website":"http://www.ciac-carros.fr/","building":"yes","historic":"castle","osm_type":"w","wikidata":"Q65153095","addr:city":"Carros","wikipedia":"fr:Château
+        de Carros","addr:street":"Place du Chateau le village","addr:postcode":"06510","opening_hours":"Jul-Aug:
+        Tu-Su 10:00-12:30, 14:30-18:30; Sep-Jun: Tu-Su 10:00-12:30, 14:00-17:30","addr:housename":"Château
+        de Carros","historic:civilization":"medieval"}},"place_id":"51a231bacb7dbf1c40596308b6d972e54540f00102f90156e46f080000000092032743656e74726520696e7465726e6174696f6e616c20642761727420636f6e74656d706f7261696e"},"geometry":{"type":"Point","coordinates":[7.187003310431836,43.79256745708769]}},{"type":"Feature","properties":{"name":"Teatro
+        romano di Albintimilium","street":"Corso Genova","city":"Ventimiglia","county":"Imperia","state":"Liguria","postcode":"18019","country":"Italy","country_code":"it","lon":7.625137638179581,"lat":43.7893801,"formatted":"Teatro
+        romano di Albintimilium, Corso Genova, 18019 Ventimiglia IM, Italy","address_line1":"Teatro
+        romano di Albintimilium","address_line2":"Corso Genova, 18019 Ventimiglia
+        IM, Italy","categories":["building","building.historic","building.tourism","tourism","tourism.attraction","tourism.sights","tourism.sights.archaeological_site"],"details":["details","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Teatro
+        romano di Albintimilium","ruins":"yes","osm_id":-5640261,"tourism":"attraction","website":"http://www.archeoliguria.beniculturali.it/index.php?it/381/antiquarium-e-area-archeologica-della-citt-antica-di-albintimilium","building":"yes","historic":"archaeological_site","osm_type":"r","wikidata":"Q46388876","opening_hours":"Sa
+        15:00-18:00"}},"place_id":"5195fa851459801e4059808adf140ae54540f00101f901451056000000000092031e54656174726f20726f6d616e6f20646920416c62696e74696d696c69756d"},"geometry":{"type":"Point","coordinates":[7.625339813878459,43.78937016406144]}},{"type":"Feature","properties":{"name":"Hôtel
+        Negresco","housenumber":"37","street":"Promenade des Anglais","quarter":"Carré
+        d''Or","suburb":"Les Baumettes","city":"Nice","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06000","country":"France","country_code":"fr","lon":7.257752071044014,"lat":43.69470965,"formatted":"Hôtel
+        Negresco, 37 Promenade des Anglais, 06000 Nice, France","address_line1":"Hôtel
+        Negresco","address_line2":"37 Promenade des Anglais, 06000 Nice, France","categories":["accommodation","accommodation.hotel","building","building.accommodation","building.historic","heritage","tourism","tourism.sights"],"details":["details","details.accommodation","details.building","details.contact","details.heritage","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Hôtel
+        Negresco","email":"reservations@lenegresco.com","phone":"+33 4 93 16 64 00","stars":5,"osm_id":-4563464,"name:fr":"Hôtel
+        Negresco","name:ko":"네그레스코 호텔","name:oc":"Ostalariá Negresco","ref:mhs":"PA00080797","tourism":"hotel","website":"https://www.hotel-negresco-nice.com/","building":"yes","heritage":2,"historic":"building","osm_type":"r","wikidata":"Q743147","addr:city":"Nice","wikipedia":"fr:Hôtel
+        Negresco","start_date":"C20","addr:street":"Promenade des Anglais","addr:country":"FR","addr:postcode":"06000","building:part":"yes","building:levels":7,"addr:housenumber":37,"heritage:operator":"mhs","mhs:inscription_date":"2003-06-13"}},"place_id":"512a09890a35081d40598111f15becd84540f00101f90108a245000000000092030f48c3b474656c204e6567726573636f"},"geometry":{"type":"Point","coordinates":[7.258014835943223,43.69471310873906]}},{"type":"Feature","properties":{"name":"Musée
+        Jean Cocteau - Le Bastion","street":"Place Fontana","suburb":"Garavan","city":"Menton","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06500","country":"France","country_code":"fr","lon":7.508460134291825,"lat":43.774774550000004,"formatted":"Musée
+        Jean Cocteau - Le Bastion, Place Fontana, 06500 Menton, France","address_line1":"Musée
+        Jean Cocteau - Le Bastion","address_line2":"Place Fontana, 06500 Menton, France","categories":["building","building.historic","building.tourism","entertainment","entertainment.museum","tourism","tourism.sights","tourism.sights.castle"],"details":["details","details.contact","details.facilities","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Musée
+        Jean Cocteau - Le Bastion","phone":"+33 4 93 57 72 30","osm_id":61995896,"tourism":"museum","website":"https://www.menton.fr/Musee-Jean-Cocteau-le-Bastion.html","alt_name":"Musée
+        Jean Cocteau","building":"yes","historic":"castle","osm_type":"w","wikidata":"Q15196997","wheelchair":"no","castle_type":"fortress","ref:FR:museofile":"M0879"}},"place_id":"513e60efa3a9081e4059fdd5bd282ce34540f00102f90178fbb103000000009203204d7573c3a965204a65616e20436f6374656175202d204c652042617374696f6e"},"geometry":{"type":"Point","coordinates":[7.508459626660679,43.77478513020831]}},{"type":"Feature","properties":{"name":"Hôtel
+        Winter Palace","street":"Chemin du Rosaire","city":"Menton","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06500","country":"France","country_code":"fr","lon":7.491575029310344,"lat":43.777386,"formatted":"Hôtel
+        Winter Palace, Chemin du Rosaire, 06500 Menton, France","address_line1":"Hôtel
+        Winter Palace","address_line2":"Chemin du Rosaire, 06500 Menton, France","categories":["building","building.historic","heritage","tourism","tourism.sights"],"details":["details","details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Hôtel
+        Winter Palace","osm_id":137793221,"ref:mhs":"PA00080765","website":"https://www.menton.fr/Les-Palaces-de-Menton.html","building":"yes","heritage":3,"historic":"manor","osm_type":"w","wikidata":"Q15950528","wikipedia":"fr:Hôtel
+        Winter-Palace","heritage:operator":"mhs","mhs:inscription_date":"1975-10-29"}},"place_id":"51c1773c602bf71d4059b997ba2780e34540f00102f901c58e36080000000092031448c3b474656c2057696e7465722050616c616365"},"geometry":{"type":"Point","coordinates":[7.491376403513585,43.777348486051274]}},{"type":"Feature","properties":{"name":"L''Orangeraie","housenumber":"15","street":"Rue
+        Partouneaux","city":"Menton","municipality":"Nice","county":"Maritime Alps","state":"Provence-Alpes-Côte
+        d''Azur","region":"Metropolitan France","postcode":"06500","country":"France","country_code":"fr","lon":7.498814663789718,"lat":43.7760885,"formatted":"L''Orangeraie,
+        15 Rue Partouneaux, 06500 Menton, France","address_line1":"L''Orangeraie","address_line2":"15
+        Rue Partouneaux, 06500 Menton, France","categories":["accommodation","accommodation.hotel","building","building.accommodation","building.historic","tourism","tourism.sights"],"details":["details","details.contact"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"L''Orangeraie","phone":"+33
+        4 92 10 41 41","osm_id":137797736,"tourism":"hotel","website":"https://www.vacanciel.com/hotel-club-menton-06-22.html","alt_name":"Hôtel
+        Club Vacanciel","building":"hotel","historic":"manor","osm_type":"w","addr:city":"Menton","addr:street":"Rue
+        Partouneaux","addr:postcode":"06500","addr:housenumber":15}},"place_id":"51537686c2acfe1d40590596dbc455e34540f00102f90168a036080000000092030c4c274f72616e676572616965"},"geometry":{"type":"Point","coordinates":[7.4987059015816895,43.77605496141408]}},{"type":"Feature","properties":{"name":"Riviera
+        Palace","street":"Le Montolivet","city":"Menton","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06500","country":"France","country_code":"fr","lon":7.49006026781585,"lat":43.777617,"formatted":"Riviera
+        Palace, Le Montolivet, 06500 Menton, France","address_line1":"Riviera Palace","address_line2":"Le
+        Montolivet, 06500 Menton, France","categories":["building","building.historic","heritage","tourism","tourism.sights"],"details":["details","details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Riviera
+        Palace","osm_id":137797747,"ref:mhs":"PA00080764","website":"https://www.menton.fr/Les-Palaces-de-Menton.html","building":"yes","heritage":3,"historic":"manor","osm_type":"w","wikidata":"Q15950506","wikipedia":"fr:Hôtel
+        Riviera-Palace","heritage:operator":"mhs","mhs:inscription_date":"1979-12-28"}},"place_id":"51ddd367a3edf51d405945e04c3088e34540f00102f90173a036080000000092030e526976696572612050616c616365"},"geometry":{"type":"Point","coordinates":[7.490164330684789,43.7775936484691]}},{"type":"Feature","properties":{"name":"Forte
+        dell''Annunziata","street":"Corso A. Toscanini","suburb":"Ville Inferiore","city":"Ventimiglia","county":"Imperia","state":"Liguria","postcode":"18039","country":"Italy","country_code":"it","lon":7.5957882792030125,"lat":43.790365,"formatted":"Forte
+        dell''Annunziata, Corso A. Toscanini, 18039 Ventimiglia IM, Italy","address_line1":"Forte
+        dell''Annunziata","address_line2":"Corso A. Toscanini, 18039 Ventimiglia IM,
+        Italy","categories":["building","building.historic","building.tourism","entertainment","entertainment.museum","tourism","tourism.sights","tourism.sights.fort"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Forte
+        dell''Annunziata","osm_id":200831628,"tourism":"museum","website":"http://www.fortedellannunziata.it/","building":"yes","historic":"fort","osm_type":"w","wikipedia":"it:Fortezza
+        dell''Annunziata"}},"place_id":"510e9f5da616621e4059ae26aa322be54540f00102f9018c72f80b00000000920315466f7274652064656c6c27416e6e756e7a69617461"},"geometry":{"type":"Point","coordinates":[7.595789527382079,43.79038079555663]}},{"type":"Feature","properties":{"name":"Monument
+        aux morts de Rauba-Capèu","street":"Espace Roger Pierre Seassal","suburb":"Vieux
+        Nice","city":"Nice","municipality":"Nice","county":"Maritime Alps","state":"Provence-Alpes-Côte
+        d''Azur","region":"Metropolitan France","postcode":"06300","country":"France","country_code":"fr","lon":7.281109,"lat":43.6937162,"formatted":"Monument
+        aux morts de Rauba-Capèu, Espace Roger Pierre Seassal, 06300 Nice, France","address_line1":"Monument
+        aux morts de Rauba-Capèu","address_line2":"Espace Roger Pierre Seassal, 06300
+        Nice, France","categories":["heritage","tourism","tourism.sights","tourism.sights.memorial","wheelchair","wheelchair.yes"],"details":["details","details.artwork","details.facilities","details.heritage","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Monument
+        aux morts de Rauba-Capèu","osm_id":204105723,"name:fr":"Monument aux morts
+        de Rauba-Capèu","name:ru":"Монумент Погибшим на Рауба-Капеу","ref:mhs":"PA06000040","website":"https://monumentsmorts.univ-lille3.fr/monument/4125/nice-autre/?elm=1","heritage":2,"historic":"memorial","memorial":"war_memorial","osm_type":"n","wikidata":"Q3323294","mapillary":"aEBckqYWmQKJ1YAE2V9QWg","wikipedia":"fr:Monument
+        aux morts de Rauba-Capeù","start_date":1928,"wheelchair":"yes","artist_name":"Roger
+        Séassal","heritage:operator":"mhs","mhs:inscription_date":"2011-05-24","ref:FR:MemorialGenWeb":34546}},"place_id":"51ed71a609db1f1d4059340345b1cbd84540f00103f901fb672a0c000000009203224d6f6e756d656e7420617578206d6f7274732064652052617562612d436170c3a875"},"geometry":{"type":"Point","coordinates":[7.281108999999998,43.69371620054008]}},{"type":"Feature","properties":{"name":"Château
+        de Crémat","street":"Chemin de Crémat","suburb":"Saint-Isidore","city":"Nice","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06284","country":"France","country_code":"fr","lon":7.209441306407552,"lat":43.72377505,"formatted":"Château
+        de Crémat, Chemin de Crémat, 06284 Nice, France","address_line1":"Château
+        de Crémat","address_line2":"Chemin de Crémat, 06284 Nice, France","categories":["building","building.historic","tourism","tourism.sights","tourism.sights.castle"],"details":["details","details.building","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Château
+        de Crémat","height":8,"osm_id":1023719334,"website":"http://www.chateau-cremat.fr/","building":"yes","historic":"castle","osm_type":"w","wikidata":"Q2969092","wikipedia":"fr:Château
+        de Crémat","castle_type":"stately"}},"place_id":"51a235814470d61c40591bf5a739a2dc4540f00102f901a6b7043d000000009203134368c3a274656175206465204372c3a96d6174"},"geometry":{"type":"Point","coordinates":[7.209412641893694,43.723700720797034]}},{"type":"Feature","properties":{"name":"Domaine
+        des Colombières","street":"Route de Super Garavan","suburb":"Garavan","city":"Menton","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06500","country":"France","country_code":"fr","lon":7.5169095,"lat":43.7876342,"formatted":"Domaine
+        des Colombières, Route de Super Garavan, 06500 Menton, France","address_line1":"Domaine
+        des Colombières","address_line2":"Route de Super Garavan, 06500 Menton, France","categories":["heritage","tourism","tourism.sights","tourism.sights.castle"],"details":["details","details.heritage","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Domaine
+        des Colombières","osm_id":5469871297,"ref:mhs":"PA00080761","website":"https://www.lescolombieres.com/","heritage":2,"historic":"castle","osm_type":"n","wikidata":"Q22916194","wikipedia":"fr:Domaine
+        des Colombières (Menton)","start_date":"C20","heritage:operator":"mhs","mhs:inscription_date":"1991-10-03"}},"place_id":"5183f755b950111e405904438e32d1e44540f00103f901c19c074601000000920318446f6d61696e652064657320436f6c6f6d6269c3a8726573"},"geometry":{"type":"Point","coordinates":[7.5169095,43.787634200538406]}},{"type":"Feature","properties":{"name":"Citadelle
+        Saint-Elme","street":"Avenue du Général de Gaulle","suburb":"L''Octroi","city":"Villefranche-sur-Mer","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06230","country":"France","country_code":"fr","lon":7.310984613836727,"lat":43.701375299999995,"formatted":"Citadelle
+        Saint-Elme, Avenue du Général de Gaulle, 06230 Villefranche-sur-Mer, France","address_line1":"Citadelle
+        Saint-Elme","address_line2":"Avenue du Général de Gaulle, 06230 Villefranche-sur-Mer,
+        France","categories":["heritage","no_fee","no_fee.no","tourism","tourism.sights","tourism.sights.castle"],"details":["details","details.heritage","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"fee":"no","name":"Citadelle
+        Saint-Elme","osm_id":-10116067,"barrier":"city_wall","name:oc":"Ciutadèla
+        de Sant Èume","ref:mhs":"PA00080920","heritage":2,"historic":"castle","osm_type":"r","wikidata":"Q2974372","wikipedia":"fr:Citadelle
+        Saint-Elme","start_date":"C16","castle_type":"citadel","heritage:operator":"mhs","mhs:inscription_date":"1968-03-11"}},"place_id":"51eef6d8f0233e1d40596933b4f9c3d94540f00101f901e35b9a00000000009203144369746164656c6c65205361696e742d456c6d65"},"geometry":{"type":"Point","coordinates":[7.3106839783119835,43.70129319476002]}},{"type":"Feature","properties":{"name":"Fort
+        du Mont-Alban","street":"Chemin du Fort du Mont Alban","city":"Nice","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06236","country":"France","country_code":"fr","lon":7.30029662455141,"lat":43.701325999999995,"formatted":"Fort
+        du Mont-Alban, Chemin du Fort du Mont Alban, 06236 Nice, France","address_line1":"Fort
+        du Mont-Alban","address_line2":"Chemin du Fort du Mont Alban, 06236 Nice,
+        France","categories":["heritage","tourism","tourism.sights","tourism.sights.castle"],"details":["details","details.heritage","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Fort
+        du Mont-Alban","height":20,"osm_id":-4610223,"name:oc":"Fòrt dau Mont Alban","ref:mhs":"PA00080795","heritage":2,"historic":"castle","osm_type":"r","wikidata":"Q2133894","wikipedia":"fr:Fort
+        du mont Alban","start_date":"C16","castle_type":"fortress","heritage:operator":"mhs","mhs:inscription_date":"1909-02-20"}},"place_id":"511c075e085a331d4059c63c3917c5d94540f00101f901af58460000000000920312466f7274206475204d6f6e742d416c62616e"},"geometry":{"type":"Point","coordinates":[7.300148134936332,43.701327231357524]}},{"type":"Feature","properties":{"name":"Monastère
+        franciscain de Cimiez","street":"Corniche du Frère Marc","suburb":"Cimiez","city":"Nice","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06108","country":"France","country_code":"fr","lon":7.279242353665492,"lat":43.719840149999996,"formatted":"Monastère
+        franciscain de Cimiez, Corniche du Frère Marc, 06108 Nice, France","address_line1":"Monastère
+        franciscain de Cimiez","address_line2":"Corniche du Frère Marc, 06108 Nice,
+        France","categories":["building","building.historic","tourism","tourism.sights"],"details":["details","details.building","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Monastère
+        franciscain de Cimiez","osm_id":-1469212,"name:fr":"Monastère franciscain
+        de Cimiez","name:oc":"Monastèri franciscan de Cimier","ref:mhs":"PA00080802","building":"monastery","historic":"monastery","osm_type":"r","wikidata":"Q3320265","community":"OFM","wikipedia":"fr:Monastère
+        de Cimiez","start_date":"C15","monastery:type":"monastery","community:gender":"male","heritage:operator":"mhs"}},"place_id":"511919af7bc71d1d40596627550224dc4540f00101f9011c6b1600000000009203204d6f6e617374c3a87265206672616e6369736361696e2064652043696d69657a"},"geometry":{"type":"Point","coordinates":[7.279081280290733,43.719848910883954]}},{"type":"Feature","properties":{"name":"Fort
+        Suchet","street":"D 2204","suburb":"Saint-Jean","city":"Sospel","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06380","country":"France","country_code":"fr","lon":7.433897375610805,"lat":43.8628095,"formatted":"Fort
+        Suchet, D 2204, 06380 Sospel, France","address_line1":"Fort Suchet","address_line2":"D
+        2204, 06380 Sospel, France","categories":["tourism","tourism.sights","tourism.sights.fort"],"details":["details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Fort
+        Suchet","osm_id":55360847,"barrier":"retaining_wall","historic":"fort","osm_type":"w","wikidata":"Q7113109"}},"place_id":"51c4e767e06ebc1d40597be9134d6eee4540f00102f9014fbd4c030000000092030b466f727420537563686574"},"geometry":{"type":"Point","coordinates":[7.434016710607413,43.86274112198131]}},{"type":"Feature","properties":{"name":"Ancien
+        Hôtel Bristol","old_name":"Hôtel Bristol","street":"Avenue des Héllènes","city":"Beaulieu-sur-Mer","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06310","country":"France","country_code":"fr","lon":7.332727388035988,"lat":43.704925,"formatted":"Ancien
+        Hôtel Bristol, Avenue des Héllènes, 06310 Beaulieu-sur-Mer, France","address_line1":"Ancien
+        Hôtel Bristol","address_line2":"Avenue des Héllènes, 06310 Beaulieu-sur-Mer,
+        France","categories":["building","building.historic","heritage","tourism","tourism.sights"],"details":["details","details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Ancien
+        Hôtel Bristol","osm_id":62545567,"ref:mhs":"PA00080662","building":"yes","heritage":3,"historic":"building","old_name":"Hôtel
+        Bristol","osm_type":"w","wikidata":"Q15950399","wikipedia":"fr:Hôtel Bristol
+        (Beaulieu-sur-Mer)","heritage:operator":"mhs","mhs:inscription_date":"1978-06-23"}},"place_id":"51949ba2a489541d4059e65c31cc39da4540f00102f9019f5eba0300000000920315416e6369656e2048c3b474656c2042726973746f6c"},"geometry":{"type":"Point","coordinates":[7.332556316780842,43.70488884363458]}},{"type":"Feature","properties":{"name":"Château
+        de la Gaude","street":"Chemin du Château","city":"Saint-Jeannet","municipality":"Grasse","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06640","country":"France","country_code":"fr","lon":7.168022253412893,"lat":43.743417550000004,"formatted":"Château
+        de la Gaude, Chemin du Château, 06640 Saint-Jeannet, France","address_line1":"Château
+        de la Gaude","address_line2":"Chemin du Château, 06640 Saint-Jeannet, France","categories":["building","building.historic","tourism","tourism.sights","tourism.sights.castle"],"details":["details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Château
+        de la Gaude","osm_id":70970882,"building":"yes","historic":"castle","osm_type":"w","wikidata":"Q83715520"}},"place_id":"51a2e1359012ac1c4059b6f6baaf27df4540f00102f90102ee3a04000000009203144368c3a274656175206465206c61204761756465"},"geometry":{"type":"Point","coordinates":[7.168039563454302,43.74339863423431]}},{"type":"Feature","properties":{"name":"Chapelle
+        des Pénitents Gris","street":"Place Saint-Michel","city":"Sospel","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06380","country":"France","country_code":"fr","lon":7.4474003160377364,"lat":43.876923000000005,"formatted":"Chapelle
+        des Pénitents Gris, Place Saint-Michel, 06380 Sospel, France","address_line1":"Chapelle
+        des Pénitents Gris","address_line2":"Place Saint-Michel, 06380 Sospel, France","categories":["building","building.historic","building.place_of_worship","heritage","tourism","tourism.sights","tourism.sights.place_of_worship.chapel"],"details":["details.building","details.heritage","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Chapelle
+        des Pénitents Gris","osm_id":115762956,"ref:mhs":"PA00080861","building":"chapel","heritage":3,"historic":"yes","osm_type":"w","wikidata":"Q15945283","wikipedia":"fr:Chapelle
+        de l''Immaculée-Conception des Pénitents gris de Sospel","start_date":"C16","heritage:operator":"mhs","mhs:inscription_date":"1952-04-17"}},"place_id":"51b8837b0823ca1d40594969d71a3ef04540f00102f9010c67e6060000000092031c43686170656c6c65206465732050c3a96e6974656e74732047726973"},"geometry":{"type":"Point","coordinates":[7.447399265803078,43.87689528959397]}},{"type":"Feature","properties":{"name":"Chapelle
+        Sainte-Croix","street":"Rue Sainte-Croix","city":"Sospel","municipality":"Nice","county":"Maritime
+        Alps","state":"Provence-Alpes-Côte d''Azur","region":"Metropolitan France","postcode":"06380","country":"France","country_code":"fr","lon":7.450253353658534,"lat":43.8786535,"formatted":"Chapelle
+        Sainte-Croix, Rue Sainte-Croix, 06380 Sospel, France","address_line1":"Chapelle
+        Sainte-Croix","address_line2":"Rue Sainte-Croix, 06380 Sospel, France","categories":["building","building.historic","building.place_of_worship","heritage","tourism","tourism.sights","tourism.sights.place_of_worship.chapel"],"details":["details","details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Chapelle
+        Sainte-Croix","osm_id":115766636,"ref:mhs":"PA00080862","alt_name":"Chapelle
+        des Pénitents Blancs","building":"chapel","heritage":3,"historic":"yes","osm_type":"w","wikidata":"Q15695477","wikipedia":"fr:Chapelle
+        Sainte-Croix de Sospel","heritage:operator":"mhs","mhs:inscription_date":"1949-12-10"}},"place_id":"519d40bcc90ecd1d4059dcf494bc77f04540f00102f9016c75e6060000000092031543686170656c6c65205361696e74652d43726f6978"},"geometry":{"type":"Point","coordinates":[7.45025172435285,43.87865407250658]}}]}'
+  recorded_at: Mon, 14 Nov 2022 18:20:45 GMT
 recorded_with: VCR 6.1.0
