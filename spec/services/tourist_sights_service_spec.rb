@@ -8,7 +8,7 @@ RSpec.describe TouristSightsService do
 
       expect(sights).to be_a Hash
       expect(sights).to have_key(:features)
-      sights[:features].each do |sight|
+      sights[:features].each do |sig
         expect(sight[:properties]).to have_key(:name)
         expect(sight[:properties][:name]).to be_a String
         expect(sight[:properties]).to have_key(:formatted)
