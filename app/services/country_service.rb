@@ -1,7 +1,7 @@
 class CountryService
 
   def self.random_country
-    response = conn.get("/v2/all?fields=name")
+    response = conn.get("/v2/all?fields=name,alpha2Code,latlng")
     all = JSON.parse(response.body, symbolize_names:true )
     all.map{|country| country[:name]}.sample
   end

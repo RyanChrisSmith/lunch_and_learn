@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Video PORO' do
-  it 'can take only the info needed from the API return' do
+  it 'can take only the info needed from the API return', :vcr do
     video_data = {
       :kind=>"youtube#searchResult",
       :etag=>"VJ8vh9PGCjSq-hQ8BFgrfvuzpZw",
