@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe TouristSightsService do 
+RSpec.describe TouristSightsService do
   describe 'happy path' do
     it 'can get all the tourist sights within a 20,000 meter radius' do
       lat_long = CountryService.lat_long('France')
