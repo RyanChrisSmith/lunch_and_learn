@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 14 Nov 2022 20:48:42 GMT
+      - Mon, 14 Nov 2022 22:15:29 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -37,11 +37,11 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=15552001
       X-Request-Id:
-      - f69109636d90bc823b1933bfb7636db3
+      - 35ed648f06e8f5c2bbeb3361bb6f6044
     body:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
-  recorded_at: Mon, 14 Nov 2022 20:48:42 GMT
+  recorded_at: Mon, 14 Nov 2022 22:15:29 GMT
 - request:
     method: get
     uri: https://api.edamam.com/api/recipes/v2?app_id=81d26543&app_key=262130f91261a8e0ddf43423db417fec&q=gerrrrmany&type=public
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 14 Nov 2022 20:48:42 GMT
+      - Mon, 14 Nov 2022 22:15:29 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -79,9 +79,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=15552001
       X-Request-Id:
-      - 39d3794559a93eed5d0eb0249b9ebcf5
+      - 3ef6b782aa6ae5a20a559874d4d783f1
     body:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
-  recorded_at: Mon, 14 Nov 2022 20:48:42 GMT
+  recorded_at: Mon, 14 Nov 2022 22:15:29 GMT
 recorded_with: VCR 6.1.0

@@ -12,5 +12,4 @@ class User < ApplicationRecord
   after_validation(on: :create) do
     self.api_key = SecureRandom.hex(24)
   end
-
 end

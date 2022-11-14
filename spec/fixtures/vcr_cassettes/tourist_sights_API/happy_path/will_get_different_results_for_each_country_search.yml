@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 20:48:45 GMT
+      - Mon, 14 Nov 2022 22:15:32 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -45,7 +45,7 @@ http_interactions:
         republika","common":"Francúzsko"},"spa":{"official":"República francés","common":"Francia"},"swe":{"official":"Republiken
         Frankrike","common":"Frankrike"},"tur":{"official":"Fransa Cumhuriyeti","common":"Fransa"},"urd":{"official":"جمہوریہ
         فرانس","common":"فرانس"},"zho":{"official":"法兰西共和国","common":"法国"}},"latlng":[46.0,2.0],"landlocked":false,"borders":["AND","BEL","DEU","ITA","LUX","MCO","ESP","CHE"],"area":551695.0,"demonyms":{"eng":{"f":"French","m":"French"},"fra":{"f":"Française","m":"Français"}},"flag":"\uD83C\uDDEB\uD83C\uDDF7","maps":{"googleMaps":"https://goo.gl/maps/g7QxxSFsWyTPKuzd7","openStreetMaps":"https://www.openstreetmap.org/relation/1403916"},"population":67391582,"gini":{"2018":32.4},"fifa":"FRA","car":{"signs":["F"],"side":"right"},"timezones":["UTC-10:00","UTC-09:30","UTC-09:00","UTC-08:00","UTC-04:00","UTC-03:00","UTC+01:00","UTC+02:00","UTC+03:00","UTC+04:00","UTC+05:00","UTC+10:00","UTC+11:00","UTC+12:00"],"continents":["Europe"],"flags":{"png":"https://flagcdn.com/w320/fr.png","svg":"https://flagcdn.com/fr.svg"},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/fr.png","svg":"https://mainfacts.com/media/images/coats_of_arms/fr.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[48.87,2.33]},"postalCode":{"format":"#####","regex":"^(\\d{5})$"}}]'
-  recorded_at: Mon, 14 Nov 2022 20:48:45 GMT
+  recorded_at: Mon, 14 Nov 2022 22:15:32 GMT
 - request:
     method: get
     uri: https://api.geoapify.com/v2/places?apiKey=3d00506398ea4d8684a8fe6459b71712&categories=tourism.sights&filter=circle:2.0,46.0,20000
@@ -65,7 +65,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 20:48:47 GMT
+      - Mon, 14 Nov 2022 22:15:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -95,13 +95,13 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=odYs%2Bks71I13syKGyQL3IBY%2BAReb3243%2FnMFxBIUAInT07prYOeRYWLSEAb6JpU7aCnkNiYZ9AJM790nP%2FkEmvbbCp42rF56JUBiGQzOZ75SlG05Gyu8WYwdY8WZEBCpEKw%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Qgqz%2BunZK%2FQpZRPzZS0qKy9HyLLkOmrxYnS5JrrY4Lf%2F3zLzqPav50FJlohrpqh3kov0XD%2B3Ic8ufsrKEOcbYBGCthrt%2BB%2B%2BcN0%2BJDgJkReXuG2VOsQAy9XU%2B%2FUKZXqxWKE%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 76a29c1f98a69464-SJC
+      - 76a31b3c08cfaa51-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -248,7 +248,7 @@ http_interactions:
         OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Château
         de Beaumont","access":"private","osm_id":235056206,"building":"yes","historic":"castle","osm_type":"w","wikipedia":"fr:Château
         de Beaumont (Saint-Yrieix-les-Bois)","castle_type":"chateau"}},"place_id":"5102c8f0e4e91dff3f59d81cce21d20d4740f00102f9014eac020e000000009203144368c3a27465617520646520426561756d6f6e74"},"geometry":{"type":"Point","coordinates":[1.9448031371107395,46.1079752212915]}}]}'
-  recorded_at: Mon, 14 Nov 2022 20:48:47 GMT
+  recorded_at: Mon, 14 Nov 2022 22:15:33 GMT
 - request:
     method: get
     uri: https://restcountries.com/v3.1/name/Latvia
@@ -268,7 +268,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 20:48:47 GMT
+      - Mon, 14 Nov 2022 22:15:34 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -294,7 +294,7 @@ http_interactions:
         republika","common":"Lotyšsko"},"spa":{"official":"República de Letonia","common":"Letonia"},"swe":{"official":"Republiken
         Lettland","common":"Lettland"},"tur":{"official":"Letonya Cumhuriyeti","common":"Letonya"},"urd":{"official":"جمہوریہ
         لٹویا","common":"لٹویا"},"zho":{"official":"拉脱维亚共和国","common":"拉脱维亚"}},"latlng":[57.0,25.0],"landlocked":false,"borders":["BLR","EST","LTU","RUS"],"area":64559.0,"demonyms":{"eng":{"f":"Latvian","m":"Latvian"},"fra":{"f":"Lettone","m":"Letton"}},"flag":"\uD83C\uDDF1\uD83C\uDDFB","maps":{"googleMaps":"https://goo.gl/maps/iQpUkH7ghq31ZtXe9","openStreetMaps":"https://www.openstreetmap.org/relation/72594"},"population":1901548,"gini":{"2018":35.1},"fifa":"LVA","car":{"signs":["LV"],"side":"right"},"timezones":["UTC+02:00"],"continents":["Europe"],"flags":{"png":"https://flagcdn.com/w320/lv.png","svg":"https://flagcdn.com/lv.svg"},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/lv.png","svg":"https://mainfacts.com/media/images/coats_of_arms/lv.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[56.95,24.1]},"postalCode":{"format":"LV-####","regex":"^(?:LV)*(\\d{4})$"}}]'
-  recorded_at: Mon, 14 Nov 2022 20:48:47 GMT
+  recorded_at: Mon, 14 Nov 2022 22:15:34 GMT
 - request:
     method: get
     uri: https://api.geoapify.com/v2/places?apiKey=3d00506398ea4d8684a8fe6459b71712&categories=tourism.sights&filter=circle:25.0,57.0,20000
@@ -314,7 +314,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 20:48:49 GMT
+      - Mon, 14 Nov 2022 22:15:35 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -344,13 +344,13 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=aj6jsdjZayF%2BFoSlkiFIBCTKb%2Fz1sSrahxnXmgwiUxlYcEMvSOkpmgDE4YuCcdSmZ3CTSAICyn2rybAtmond9B46dCAI7QDvMpX8m0mGpuX3aUUI8QqBFQT9rnnmy1TGSdA%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=swLoMFSCH%2BvKx5ImUSRIU03W8IV05CDmvxwxJhkiB1v4hH5CedtIoUK8L64BhoZ0S5ml5JNV12T1clHAaomft7tLLajRW4SIXF%2BYs2XleGlA08EiwIhDF0DK1vu4Hy2RzmA%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 76a29c29dd43eaf2-DFW
+      - 76a31b464ba5e8f5-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -492,5 +492,5 @@ http_interactions:
         pilskalns","address_line2":"Rīga — Ērgļi, Suntažu pagasts, Latvia","categories":["tourism","tourism.sights","tourism.sights.archaeological_site"],"details":["details","details.historic"],"datasource":{"sourcename":"openstreetmap","attribution":"©
         OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Ķoderu
         pilskalns","osm_id":4307276679,"alt_name":"Lielā vīra gulta","historic":"archaeological_site","osm_type":"n","site_type":"fortification","fortification_type":"hill_fort"}},"place_id":"51e58af7883dc5384059b30bc0e72c744c40f00103f90187d3bb0001000000920311c4b66f646572752070696c736b616c6e73"},"geometry":{"type":"Point","coordinates":[24.770470199999995,56.907620400211634]}}]}'
-  recorded_at: Mon, 14 Nov 2022 20:48:49 GMT
+  recorded_at: Mon, 14 Nov 2022 22:15:35 GMT
 recorded_with: VCR 6.1.0

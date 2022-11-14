@@ -1,5 +1,5 @@
 class Api::V1::FavoritesController < ApplicationController
-  before_action :find_user, only: [:index, :create]
+  before_action :find_user, only: %i[index create]
 
   def index
     favorites = Favorite.where(user_id: @user.id)

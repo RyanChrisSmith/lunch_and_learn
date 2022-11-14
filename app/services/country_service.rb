@@ -1,8 +1,9 @@
 class CountryService
 
   def self.random_country
-    response = conn.get("/v3.1/all?fields=name,alpha2Code,latlng")
-    all = JSON.parse(response.body, symbolize_names:true )
+    all = Rails.cache.fetch(response = conn.get("/v3.1/all?fields=name"), expires: 30.days) do
+      JSON.parse(response.body, symbolize_names:true )
+    end
     all.map{|country| country[:name][:common]}.sample
   end
 
