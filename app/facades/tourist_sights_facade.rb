@@ -6,4 +6,9 @@ class TouristSightsFacade
       TouristSight.new(data)
     end
   end
+
+  def self.random
+    country = CountryService.random_country
+    sights(country)
+  end
 end

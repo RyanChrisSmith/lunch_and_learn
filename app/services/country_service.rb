@@ -3,7 +3,7 @@ class CountryService
   def self.random_country
     response = conn.get("/v3.1/all?fields=name,alpha2Code,latlng")
     all = JSON.parse(response.body, symbolize_names:true )
-    all.map{|country| country[:name][:official]}.sample
+    all.map{|country| country[:name][:common]}.sample
   end
 
   def self.lat_long(country)
