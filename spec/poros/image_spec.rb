@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Image PORO' do
-  it 'can select out the info needed from the API call' do
+  it 'can select out the info needed from the API call', :vcr do
     image_data = {:id=>"yJ2SHIpNb9M",
     :created_at=>"2018-10-27T03:32:26Z",
     :updated_at=>"2022-11-13T01:05:52Z",

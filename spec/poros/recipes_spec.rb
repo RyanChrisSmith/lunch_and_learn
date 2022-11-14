@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Recipes PORO' do
-  it 'can get the info needed to make a PORO' do
+  it 'can get the info needed to make a PORO', :vcr do
     country = 'thailand'
     recipe = {
       recipe: {

@@ -40,7 +40,7 @@ RSpec.describe 'User API' do
     expect(created_user[:data][:attributes][:api_key]).to be_a String
   end
 
-  it 'upon registration, can recieve a POST request with missing password an error response related to the password missing' do
+  it 'upon registration, can recieve a POST request with missing password an error response related to the password missing', :vcr do
     user_params =
         {
           "name": 'Ronny Fantastic',
@@ -56,7 +56,7 @@ RSpec.describe 'User API' do
     expect(error[:password]).to eq(["can't be blank"])
   end
 
-  it 'upon registration, can recieve a POST request without an email an error related to needing an email' do
+  it 'upon registration, can recieve a POST request without an email an error related to needing an email', :vcr do
     user_params =
     {
       "name": 'Ronny Fantastic',
