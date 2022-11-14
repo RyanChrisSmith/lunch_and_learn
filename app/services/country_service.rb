@@ -9,6 +9,7 @@ class CountryService
   def self.lat_long(country)
     response = conn.get("/v3.1/name/#{country}")
     country_info = JSON.parse(response.body, symbolize_names: true)
+    lat_long = country_info[0][:latlng].reverse
   end
 
   private
