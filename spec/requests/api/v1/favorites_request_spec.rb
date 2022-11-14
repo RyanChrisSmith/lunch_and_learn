@@ -6,6 +6,7 @@ RSpec.describe 'Favorites API' do
     @user = User.create!(name: 'How many', email: 'testsareneeded@home.com', password: 'password', password_confirmation: 'password')
     Favorite.create!(api_key: @user.api_key, country: 'thailand', recipe_link: "https://www.tastingtable.com/.....", recipe_title: 'Tom Kha Gai (Chicken in Coconut Soup)', user_id: @user.id)
     Favorite.create!(api_key: @user.api_key, country: 'mexico', recipe_link: "https://www.tastingtable.com/.....", recipe_title: 'Tacos', user_id: @user.id)
+    @fav = Favorite.create!(api_key: @user.api_key, country: 'belgium', recipe_link: "https://www.tastingtable.com/.....", recipe_title: 'Salad', user_id: @user.id)
     Favorite.create!(api_key: @user.api_key, country: 'canada', recipe_link: "https://www.tastingtable.com/.....", recipe_title: 'Poutine fries', user_id: @user.id)
   end
 
@@ -17,7 +18,7 @@ RSpec.describe 'Favorites API' do
         "recipe_link": "https://www.tastingtable.com/.....",
         "recipe_title": "Bratwurst"
       }
-      headers = {"CONTENT_TYPE" => 'application/json'}
+      headers = { "CONTENT_TYPE" => 'application/json' }
 
       post '/api/v1/favorites', headers: headers, params: JSON.generate(fav_params)
 
@@ -35,7 +36,7 @@ RSpec.describe 'Favorites API' do
       body = {
         api_key: @user.api_key
       }
-      headers = {"CONTENT_TYPE" => "application/json"}
+      headers = { "CONTENT_TYPE" => "application/json" }
 
       get '/api/v1/favorites', headers: headers, params: body
 
@@ -70,7 +71,7 @@ RSpec.describe 'Favorites API' do
       body = {
         api_key: @karl.api_key
       }
-      headers = {"CONTENT_TYPE" => "application/json"}
+      headers = { "CONTENT_TYPE" => "application/json" }
 
       get '/api/v1/favorites', params: body
       expect(response).to be_successful
@@ -79,6 +80,22 @@ RSpec.describe 'Favorites API' do
 
       expect(favorites).to have_key(:data)
       expect(favorites[:data]).to eq([])
+    end
+
+    it 'can delete a favorite for users with a response to confirm', :vcr do
+      body = {
+        id: @fav.id
+      }
+      headers = { "CONTENT_TYPE" => "application/json" }
+
+      current_count = Favorite.count
+
+      delete "/api/v1/favorites", params: body
+
+      expect(Favorite.count).to eq(current_count - 1)
+
+      expect(response).to be_successful
+      expect{Favorite.find(@fav.id).to raise_error(ActiveRecord::RecordNotFound)}
     end
   end
 
@@ -90,7 +107,7 @@ RSpec.describe 'Favorites API' do
         "recipe_link": "https://www.tastingtable.com/.....",
         "recipe_title": "Bratwurst"
       }
-      headers = {"CONTENT_TYPE" => 'application/json'}
+      headers = { "CONTENT_TYPE" => 'application/json' }
 
       post '/api/v1/favorites', headers: headers, params: JSON.generate(fav_params)
 
@@ -107,7 +124,7 @@ RSpec.describe 'Favorites API' do
         "recipe_link": "https://www.tastingtable.com/.....",
         "recipe_title": "Bratwurst"
       }
-      headers = {"CONTENT_TYPE" => 'application/json'}
+      headers = { "CONTENT_TYPE" => 'application/json' }
 
       post '/api/v1/favorites', headers: headers, params: JSON.generate(fav_params)
 

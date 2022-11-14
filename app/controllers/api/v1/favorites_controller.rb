@@ -1,5 +1,5 @@
 class Api::V1::FavoritesController < ApplicationController
-  before_action :find_user
+  before_action :find_user, only: [:index, :create]
 
   def index
     favorites = Favorite.where(user_id: @user.id)
@@ -10,6 +10,10 @@ class Api::V1::FavoritesController < ApplicationController
     favorite = Favorite.create(favorite_params)
     favorite.user_id = @user.id
     render json: {success: 'Favorite added successfully'}, status: 201
+  end
+
+  def destroy
+    render json: Favorite.destroy(params[:id])
   end
 
   private
