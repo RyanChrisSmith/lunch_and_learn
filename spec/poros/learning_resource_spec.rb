@@ -20,5 +20,6 @@ RSpec.describe 'LearningResource PORO' do
     expect(final.video).to eq(video)
     expect(final.images).to eq(images)
     expect(final.instance_variables).to eq(%i[@country @video @images])
+    expect(final.instance_variables).to_not eq(%i[@description @links @user])
   end
 end

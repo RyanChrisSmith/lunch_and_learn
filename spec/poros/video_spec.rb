@@ -28,6 +28,7 @@ RSpec.describe 'Video PORO' do
       expect(final.title).to eq(video_data[:snippet][:title])
       expect(final.youtube_video_id).to eq(video_data[:id][:videoId])
       expect(final.instance_variables).to eq(%i[@title @youtube_video_id])
+      expect(final.instance_variables).to_not eq(%i[@kind @description])
   end
 
   it 'will return an empty array if there are no videos in the data' do

@@ -31,5 +31,6 @@ RSpec.describe 'Image PORO' do
     expect(image.alt_tag).to eq(image_data[:alt_description])
     expect(image.url).to eq(image_data[:urls][:raw])
     expect(image.instance_variables).to eq(%i[@alt_tag @url])
+    expect(image.instance_variables).to_not eq(%i[@description @alt_description])
   end
 end

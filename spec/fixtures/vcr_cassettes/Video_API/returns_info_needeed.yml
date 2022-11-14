@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Mon, 14 Nov 2022 02:46:44 GMT
+      - Mon, 14 Nov 2022 14:58:36 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -43,25 +43,25 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"9p39TPeQdlnA5A2JvazLbcnPt9E\",\n
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"Wwlk3SGGHnxa_96pBdvhx-u6YDE\",\n
         \ \"nextPageToken\": \"CAEQAA\",\n  \"regionCode\": \"US\",\n  \"pageInfo\":
         {\n    \"totalResults\": 1000000,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
-        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"Yw3nIfD88FdcoEZV92VGUj7sgcs\",\n
+        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"jK_OoGV7IQ6Ly5n30k4d_4ctFKk\",\n
         \     \"id\": {\n        \"kind\": \"youtube#video\",\n        \"videoId\":
-        \"NuXtwsE_c5E\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
-        \"2022-11-13T11:45:02Z\",\n        \"channelId\": \"UCO5IhWS7_CIU1HoAkffBzcg\",\n
-        \       \"title\": \"I was wrong about Vientiane, Laos \U0001F1F1\U0001F1E6\",\n
-        \       \"description\": \"In today's video, I talk about the nightlife in
-        Vientiane. I have been pleasantly surprised by the nightlife here, being that
-        it's such a ...\",\n        \"thumbnails\": {\n          \"default\": {\n
-        \           \"url\": \"https://i.ytimg.com/vi/NuXtwsE_c5E/default.jpg\",\n
-        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/NuXtwsE_c5E/mqdefault.jpg\",\n
+        \"Bt52XzSrM18\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2022-11-14T10:30:03Z\",\n        \"channelId\": \"UCBQjTfMEcxMlI49KCQAHwYQ\",\n
+        \       \"title\": \"LAOS’ NEW High-Speed Train to VIENTIANE \U0001F1F1\U0001F1E6\",\n
+        \       \"description\": \"After a lovely start to our trip in Laos, exploring
+        the city of Luang Prabang, seeing the gorgeous waterfalls and eating delicious
+        ...\",\n        \"thumbnails\": {\n          \"default\": {\n            \"url\":
+        \"https://i.ytimg.com/vi/Bt52XzSrM18/default.jpg\",\n            \"width\":
+        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
+        \           \"url\": \"https://i.ytimg.com/vi/Bt52XzSrM18/mqdefault.jpg\",\n
         \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/NuXtwsE_c5E/hqdefault.jpg\",\n
+        {\n            \"url\": \"https://i.ytimg.com/vi/Bt52XzSrM18/hqdefault.jpg\",\n
         \           \"width\": 480,\n            \"height\": 360\n          }\n        },\n
-        \       \"channelTitle\": \"keis one\",\n        \"liveBroadcastContent\":
-        \"none\",\n        \"publishTime\": \"2022-11-13T11:45:02Z\"\n      }\n    }\n
+        \       \"channelTitle\": \"2Passports 1Dream\",\n        \"liveBroadcastContent\":
+        \"none\",\n        \"publishTime\": \"2022-11-14T10:30:03Z\"\n      }\n    }\n
         \ ]\n}\n"
-  recorded_at: Mon, 14 Nov 2022 02:46:44 GMT
+  recorded_at: Mon, 14 Nov 2022 14:58:36 GMT
 recorded_with: VCR 6.1.0
