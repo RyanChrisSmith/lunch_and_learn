@@ -6,6 +6,12 @@ class CountryService
     all.map{|country| country[:name][:official]}.sample
   end
 
+  def self.lat_long(country)
+    response = conn.get("/v3.1/name/#{country}")
+    country_info = JSON.parse(response.body, symbolize_names: true)
+    country_info.map{|country| country[:name][:latlng]}.reverse
+    require 'pry' ; binding.pry
+  end
 
   private
   def self.conn
