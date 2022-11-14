@@ -8,7 +8,8 @@ RSpec.describe RecipeFacade do
     expect(specific_country).to all(be_a Recipe)
   end
 
-  it '#.random' do
+  it '#.random', :vcr do
+    allow(CountryService).to receive(:random_country).and_return("thailand")
     random = RecipeFacade.random
 
     expect(random).to be_a Array

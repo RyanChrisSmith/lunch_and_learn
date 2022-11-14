@@ -42,7 +42,8 @@ RSpec.describe 'Recipes API' do
       expect(result[:data]).to eq([])
     end
 
-    it "will return a random country's recipes if search params are empty" do
+    it "will return a random country's recipes if search params are empty", :vcr do
+      allow(CountryService).to receive(:random_country).and_return("thailand")
       get '/api/v1/recipes?country='
       recipes = JSON.parse(response.body, symbolize_names: true)
 

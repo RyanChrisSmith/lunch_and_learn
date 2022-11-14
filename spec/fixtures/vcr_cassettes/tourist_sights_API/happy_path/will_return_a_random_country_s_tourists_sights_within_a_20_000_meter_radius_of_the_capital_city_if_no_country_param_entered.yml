@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 22:15:35 GMT
+      - Mon, 14 Nov 2022 23:27:16 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -45,7 +45,7 @@ http_interactions:
         republika","common":"Francúzsko"},"spa":{"official":"República francés","common":"Francia"},"swe":{"official":"Republiken
         Frankrike","common":"Frankrike"},"tur":{"official":"Fransa Cumhuriyeti","common":"Fransa"},"urd":{"official":"جمہوریہ
         فرانس","common":"فرانس"},"zho":{"official":"法兰西共和国","common":"法国"}},"latlng":[46.0,2.0],"landlocked":false,"borders":["AND","BEL","DEU","ITA","LUX","MCO","ESP","CHE"],"area":551695.0,"demonyms":{"eng":{"f":"French","m":"French"},"fra":{"f":"Française","m":"Français"}},"flag":"\uD83C\uDDEB\uD83C\uDDF7","maps":{"googleMaps":"https://goo.gl/maps/g7QxxSFsWyTPKuzd7","openStreetMaps":"https://www.openstreetmap.org/relation/1403916"},"population":67391582,"gini":{"2018":32.4},"fifa":"FRA","car":{"signs":["F"],"side":"right"},"timezones":["UTC-10:00","UTC-09:30","UTC-09:00","UTC-08:00","UTC-04:00","UTC-03:00","UTC+01:00","UTC+02:00","UTC+03:00","UTC+04:00","UTC+05:00","UTC+10:00","UTC+11:00","UTC+12:00"],"continents":["Europe"],"flags":{"png":"https://flagcdn.com/w320/fr.png","svg":"https://flagcdn.com/fr.svg"},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/fr.png","svg":"https://mainfacts.com/media/images/coats_of_arms/fr.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[48.87,2.33]},"postalCode":{"format":"#####","regex":"^(\\d{5})$"}}]'
-  recorded_at: Mon, 14 Nov 2022 22:15:35 GMT
+  recorded_at: Mon, 14 Nov 2022 23:27:16 GMT
 - request:
     method: get
     uri: https://api.geoapify.com/v2/places?apiKey=3d00506398ea4d8684a8fe6459b71712&categories=tourism.sights&filter=circle:2.0,46.0,20000
@@ -65,7 +65,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 22:15:37 GMT
+      - Mon, 14 Nov 2022 23:27:18 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -95,13 +95,13 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wyoHoZuKlhCVmp2qw3%2BKH4IXTVOgAnY9bFtnwemuHMvSjKH6zvX0bCg7G9lwSZihaXyzyWJ%2Fx%2FF0iV6N9ImkD7ZO2Lb0N5uMKZ5l2i3eJFH9YUtGLXj%2BSNU%2BJlMnKMD0MsE%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fUnoh8e0sbIaVuTBNUQbUlXvMFbkuyIRpqVlRK05OyTWKnGd5fq1uDrpsjgXo4sgrcKbco61uQSMfRX7ASPss221hZKQV%2B7IXUFUAQBOs137XGKYrnc8WeJwwFxoVskHGag%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 76a31b4fedb0e78e-DFW
+      - 76a384536f71e98b-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -248,5 +248,5 @@ http_interactions:
         OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Château
         de Beaumont","access":"private","osm_id":235056206,"building":"yes","historic":"castle","osm_type":"w","wikipedia":"fr:Château
         de Beaumont (Saint-Yrieix-les-Bois)","castle_type":"chateau"}},"place_id":"5102c8f0e4e91dff3f59d81cce21d20d4740f00102f9014eac020e000000009203144368c3a27465617520646520426561756d6f6e74"},"geometry":{"type":"Point","coordinates":[1.9448031371107395,46.1079752212915]}}]}'
-  recorded_at: Mon, 14 Nov 2022 22:15:37 GMT
+  recorded_at: Mon, 14 Nov 2022 23:27:18 GMT
 recorded_with: VCR 6.1.0
