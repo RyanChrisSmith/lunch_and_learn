@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 18:04:20 GMT
+      - Mon, 14 Nov 2022 18:15:45 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -670,10 +670,10 @@ http_interactions:
         and Jan Mayen Islands"],"latlng":[78.0,20.0]},{"name":{"common":"France","official":"French
         Republic","nativeName":{"fra":{"official":"République française","common":"France"}}},"capital":["Paris"],"altSpellings":["FR","French
         Republic","République française"],"latlng":[46.0,2.0]}]'
-  recorded_at: Mon, 14 Nov 2022 18:04:20 GMT
+  recorded_at: Mon, 14 Nov 2022 18:15:45 GMT
 - request:
     method: get
-    uri: https://restcountries.com/v3.1/name/Nicaragua
+    uri: https://restcountries.com/v3.1/name/Mauritania
     body:
       encoding: US-ASCII
       string: ''
@@ -690,7 +690,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 18:04:20 GMT
+      - Mon, 14 Nov 2022 18:15:45 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -698,31 +698,37 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1245'
+      - '1444'
     body:
       encoding: UTF-8
-      string: '[{"name":{"common":"Nicaragua","official":"Republic of Nicaragua","nativeName":{"spa":{"official":"República
-        de Nicaragua","common":"Nicaragua"}}},"tld":[".ni"],"cca2":"NI","ccn3":"558","cca3":"NIC","cioc":"NCA","independent":true,"status":"officially-assigned","unMember":true,"currencies":{"NIO":{"name":"Nicaraguan
-        córdoba","symbol":"C$"}},"idd":{"root":"+5","suffixes":["05"]},"capital":["Managua"],"altSpellings":["NI","Republic
-        of Nicaragua","República de Nicaragua"],"region":"Americas","subregion":"Central
-        America","languages":{"spa":"Spanish"},"translations":{"ara":{"official":"جمهورية
-        نيكاراغوا","common":"نيكاراغوا"},"bre":{"official":"Republik Nicaragua","common":"Nicaragua"},"ces":{"official":"Republika
-        Nikaragua","common":"Nikaragua"},"cym":{"official":"Republic of Nicaragua","common":"Nicaragua"},"deu":{"official":"Republik
-        Nicaragua","common":"Nicaragua"},"est":{"official":"Nicaragua Vabariik","common":"Nicaragua"},"fin":{"official":"Nicaraguan
-        tasavalta","common":"Nicaragua"},"fra":{"official":"République du Nicaragua","common":"Nicaragua"},"hrv":{"official":"Republika
-        Nikaragva","common":"Nikaragva"},"hun":{"official":"Nicaraguai Köztársaság","common":"Nicaragua"},"ita":{"official":"Repubblica
-        del Nicaragua","common":"Nicaragua"},"jpn":{"official":"ニカラグア共和国","common":"ニカラグア"},"kor":{"official":"니카라과
-        공화국","common":"니카라과"},"nld":{"official":"Republiek Nicaragua","common":"Nicaragua"},"per":{"official":"جمهوری
-        نیکاراگوئه","common":"نیکاراگوئه"},"pol":{"official":"Republika Nikaragui","common":"Nikaragua"},"por":{"official":"República
-        da Nicarágua","common":"Nicarágua"},"rus":{"official":"Республика Никарагуа","common":"Никарагуа"},"slk":{"official":"Nikaragujská
-        republika","common":"Nikaragua"},"spa":{"official":"República de Nicaragua","common":"Nicaragua"},"swe":{"official":"Republiken
-        Nicaragua","common":"Nicaragua"},"tur":{"official":"Nikaragua Cumhuriyeti","common":"Nikaragua"},"urd":{"official":"جمہوریہ
-        نکاراگوا","common":"نکاراگوا"},"zho":{"official":"尼加拉瓜共和国","common":"尼加拉瓜"}},"latlng":[13.0,-85.0],"landlocked":false,"borders":["CRI","HND"],"area":130373.0,"demonyms":{"eng":{"f":"Nicaraguan","m":"Nicaraguan"},"fra":{"f":"Nicaraguayenne","m":"Nicaraguayen"}},"flag":"\uD83C\uDDF3\uD83C\uDDEE","maps":{"googleMaps":"https://goo.gl/maps/P77LaEVkKJKXneRC6","openStreetMaps":"https://www.openstreetmap.org/relation/287666"},"population":6624554,"gini":{"2014":46.2},"fifa":"NCA","car":{"signs":["NIC"],"side":"right"},"timezones":["UTC-06:00"],"continents":["North
-        America"],"flags":{"png":"https://flagcdn.com/w320/ni.png","svg":"https://flagcdn.com/ni.svg"},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/ni.png","svg":"https://mainfacts.com/media/images/coats_of_arms/ni.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[12.13,-86.25]},"postalCode":{"format":"###-###-#","regex":"^(\\d{7})$"}}]'
-  recorded_at: Mon, 14 Nov 2022 18:04:20 GMT
+      string: '[{"name":{"common":"Mauritania","official":"Islamic Republic of Mauritania","nativeName":{"ara":{"official":"الجمهورية
+        الإسلامية الموريتانية","common":"موريتانيا"}}},"tld":[".mr"],"cca2":"MR","ccn3":"478","cca3":"MRT","cioc":"MTN","independent":true,"status":"officially-assigned","unMember":true,"currencies":{"MRU":{"name":"Mauritanian
+        ouguiya","symbol":"UM"}},"idd":{"root":"+2","suffixes":["22"]},"capital":["Nouakchott"],"altSpellings":["MR","Islamic
+        Republic of Mauritania","al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah"],"region":"Africa","subregion":"Western
+        Africa","languages":{"ara":"Arabic"},"translations":{"ara":{"official":"الجمهورية
+        الإسلامية الموريتانية","common":"موريتانيا"},"bre":{"official":"Republik islamek
+        Maouritania","common":"Maouritania"},"ces":{"official":"Mauritánská islámská
+        republika","common":"Mauritánie"},"cym":{"official":"Islamic Republic of Mauritania","common":"Mauritania"},"deu":{"official":"Islamische
+        Republik Mauretanien","common":"Mauretanien"},"est":{"official":"Mauritaania
+        Islamivabariik","common":"Mauritaania"},"fin":{"official":"Mauritanian islamilainen
+        tasavalta","common":"Mauritania"},"fra":{"official":"République islamique
+        de Mauritanie","common":"Mauritanie"},"hrv":{"official":"Islamska Republika
+        Mauritanija","common":"Mauritanija"},"hun":{"official":"Mauritániai Iszlám
+        Köztársaság","common":"Mauritánia"},"ita":{"official":"Repubblica islamica
+        di Mauritania","common":"Mauritania"},"jpn":{"official":"モーリタニア·イスラム共和国","common":"モーリタニア"},"kor":{"official":"모리타니
+        이슬람 공화국","common":"모리타니"},"nld":{"official":"Islamitische Republiek Mauritanië","common":"Mauritanië"},"per":{"official":"جمهوری
+        اسلامی موریتانی","common":"موریتانی"},"pol":{"official":"Islamska Republika
+        Mauretańska","common":"Mauretania"},"por":{"official":"República Islâmica
+        da Mauritânia","common":"Mauritânia"},"rus":{"official":"Исламская Республика
+        Мавритания","common":"Мавритания"},"slk":{"official":"Mauritánska islamská
+        republika","common":"Mauritánia"},"spa":{"official":"República Islámica de
+        Mauritania","common":"Mauritania"},"swe":{"official":"Islamiska republiken
+        Mauretanien","common":"Mauretanien"},"tur":{"official":"Moritanya İslam Cumhuriyeti","common":"Moritanya"},"urd":{"official":"اسلامی
+        جمہوریہ موریتانیہ","common":"موریتانیہ"},"zho":{"official":"毛里塔尼亚伊斯兰共和国","common":"毛里塔尼亚"}},"latlng":[20.0,-12.0],"landlocked":false,"borders":["DZA","MLI","SEN","ESH"],"area":1030700.0,"demonyms":{"eng":{"f":"Mauritanian","m":"Mauritanian"},"fra":{"f":"Mauritanienne","m":"Mauritanien"}},"flag":"\uD83C\uDDF2\uD83C\uDDF7","maps":{"googleMaps":"https://goo.gl/maps/im2MmQ5jFjzxWBks5","openStreetMaps":"https://www.openstreetmap.org/relation/192763"},"population":4649660,"gini":{"2014":32.6},"fifa":"MTN","car":{"signs":["RIM"],"side":"right"},"timezones":["UTC"],"continents":["Africa"],"flags":{"png":"https://flagcdn.com/w320/mr.png","svg":"https://flagcdn.com/mr.svg"},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/mr.png","svg":"https://mainfacts.com/media/images/coats_of_arms/mr.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[18.07,-15.97]}}]'
+  recorded_at: Mon, 14 Nov 2022 18:15:45 GMT
 - request:
     method: get
-    uri: https://api.geoapify.com/v2/places?apiKey=3d00506398ea4d8684a8fe6459b71712&categories=tourism.sights&filter=circle:-85.0,13.0,20000
+    uri: https://api.geoapify.com/v2/places?apiKey=3d00506398ea4d8684a8fe6459b71712&categories=tourism.sights&filter=circle:-12.0,20.0,20000
     body:
       encoding: US-ASCII
       string: ''
@@ -739,7 +745,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 18:04:21 GMT
+      - Mon, 14 Nov 2022 18:15:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -769,17 +775,17 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=l5FqjhHOfZz6%2FryAInUBOm%2BT4aEaGPLvn5x3Es5WDK5bZJBuee5ky6yzLWGo2MwGWVU6M%2FbZpJpgMEn672JyM2RDB%2BmyKhO0KPihtHO6he14Nc%2FQIpZ0S1%2Fm36we7kfEcoQ%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=c6trBUua9eO8r2x1KYFu7VfMsIsQefuN1E2adPwvRt7gsG6oIZp4zCITiu5OJZIXR%2B8jTJ5xcF%2Ba7r6ocS7FtDAyS%2BQy8rDeiJaL81512nn2jL0Qpz5P5KeklzrmnFi2Oio%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 76a1ab47dd46e956-DFW
+      - 76a1bbff0cbeea9c-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: UTF-8
       string: '{"type":"FeatureCollection","features":[]}'
-  recorded_at: Mon, 14 Nov 2022 18:04:21 GMT
+  recorded_at: Mon, 14 Nov 2022 18:15:46 GMT
 recorded_with: VCR 6.1.0
