@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Mon, 14 Nov 2022 02:33:41 GMT
+      - Mon, 14 Nov 2022 02:46:44 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -43,52 +43,25 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: |
-        {
-          "kind": "youtube#searchListResponse",
-          "etag": "yk1El0CA9nt7z-oj5SmEuAXa8Cw",
-          "nextPageToken": "CAEQAA",
-          "regionCode": "US",
-          "pageInfo": {
-            "totalResults": 1000000,
-            "resultsPerPage": 1
-          },
-          "items": [
-            {
-              "kind": "youtube#searchResult",
-              "etag": "-Qe1_d1KaBazuANhzABc1Uzcg-M",
-              "id": {
-                "kind": "youtube#video",
-                "videoId": "8IrjnS1rFdk"
-              },
-              "snippet": {
-                "publishedAt": "2022-11-12T23:00:04Z",
-                "channelId": "UCmNP7yrbYxxqQ7ftuZn6ueg",
-                "title": "Laos - No Reason to Return here Now | Now in Lao",
-                "description": "RANT WARNING!!! I know this video will upset some.. but it's not always sunny and roses do not bloom all year round. Travelling ...",
-                "thumbnails": {
-                  "default": {
-                    "url": "https://i.ytimg.com/vi/8IrjnS1rFdk/default.jpg",
-                    "width": 120,
-                    "height": 90
-                  },
-                  "medium": {
-                    "url": "https://i.ytimg.com/vi/8IrjnS1rFdk/mqdefault.jpg",
-                    "width": 320,
-                    "height": 180
-                  },
-                  "high": {
-                    "url": "https://i.ytimg.com/vi/8IrjnS1rFdk/hqdefault.jpg",
-                    "width": 480,
-                    "height": 360
-                  }
-                },
-                "channelTitle": "Now in Lao",
-                "liveBroadcastContent": "none",
-                "publishTime": "2022-11-12T23:00:04Z"
-              }
-            }
-          ]
-        }
-  recorded_at: Mon, 14 Nov 2022 02:33:41 GMT
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"9p39TPeQdlnA5A2JvazLbcnPt9E\",\n
+        \ \"nextPageToken\": \"CAEQAA\",\n  \"regionCode\": \"US\",\n  \"pageInfo\":
+        {\n    \"totalResults\": 1000000,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
+        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"Yw3nIfD88FdcoEZV92VGUj7sgcs\",\n
+        \     \"id\": {\n        \"kind\": \"youtube#video\",\n        \"videoId\":
+        \"NuXtwsE_c5E\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2022-11-13T11:45:02Z\",\n        \"channelId\": \"UCO5IhWS7_CIU1HoAkffBzcg\",\n
+        \       \"title\": \"I was wrong about Vientiane, Laos \U0001F1F1\U0001F1E6\",\n
+        \       \"description\": \"In today's video, I talk about the nightlife in
+        Vientiane. I have been pleasantly surprised by the nightlife here, being that
+        it's such a ...\",\n        \"thumbnails\": {\n          \"default\": {\n
+        \           \"url\": \"https://i.ytimg.com/vi/NuXtwsE_c5E/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/NuXtwsE_c5E/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/NuXtwsE_c5E/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          }\n        },\n
+        \       \"channelTitle\": \"keis one\",\n        \"liveBroadcastContent\":
+        \"none\",\n        \"publishTime\": \"2022-11-13T11:45:02Z\"\n      }\n    }\n
+        \ ]\n}\n"
+  recorded_at: Mon, 14 Nov 2022 02:46:44 GMT
 recorded_with: VCR 6.1.0
