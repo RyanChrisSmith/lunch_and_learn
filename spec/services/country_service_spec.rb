@@ -8,8 +8,16 @@ RSpec.describe 'CountryService' do
   end
 
   it 'can get the country and lat long' do
-    result = CountryService.lat_long('France')
+    country = "France"
+    result = CountryService.lat_long(country)
 
-    require 'pry' ; binding.pry
+    expect(result).to be_a Array
+    expect(result[0]).to have_key(:name)
+    expect(result[0][:name]).to have_key(:official)
+    expect(result[0][:name][:common]).to be_a String
+    expect(result[0][:name][:common]).to eq(country)
+    expect(result[0]).to have_key(:latlng)
+    expect(result[0][:latlng]).to be_a Array
+    expect(result[0][:latlng].count).to eq 2
   end
 end
