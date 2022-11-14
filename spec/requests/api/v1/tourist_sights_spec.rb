@@ -42,6 +42,9 @@ RSpec.describe 'tourist sights API' do
 
 
     xit "will return a random country's tourists sights within a 20,000 meter radius of the capital city if no country param entered", :vcr do
+      sights = TouristSightsFacade.random
+      allow_any_instance_of(Api::V1::TouristSightsController).to receive(:random).and_return(sights)
+
       get '/api/v1/tourist_sights?country='
       expect(response).to be_successful
       country = JSON.parse(response.body, symbolize_names: true)
