@@ -6,4 +6,10 @@ RSpec.describe 'CountryService' do
 
     expect(result).to be_a String
   end
+
+  it 'can get the country and lat long' do
+    result = CountryService.lat_long('France')
+
+    require 'pry' ; binding.pry
+  end
 end

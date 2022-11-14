@@ -6,6 +6,7 @@ class CountryService
     all.map{|country| country[:name][:official]}.sample
   end
 
+
   private
   def self.conn
     Faraday.new("https://restcountries.com")
