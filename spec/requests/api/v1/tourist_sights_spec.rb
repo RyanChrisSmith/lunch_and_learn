@@ -41,13 +41,20 @@ RSpec.describe 'tourist sights API' do
     end
 
 
-    xit "will return a random country's tourists sights within a 20,000 meter radius of the capital city if no country param entered", :vcr do
-      allow_any_instance_of(CountryService).to receive(:random).and_return("France")
+    it "will return a random country's tourists sights within a 20,000 meter radius of the capital city if no country param entered", :vcr do
+      allow(CountryService).to receive(:random_country).and_return('France')
 
       get '/api/v1/tourist_sights?country='
       expect(response).to be_successful
-      country = JSON.parse(response.body, symbolize_names: true)
-      require 'pry' ; binding.pry
+      sights = JSON.parse(response.body, symbolize_names: true)
+
+      sights[:data].each do |sight|
+        expect(sight).to have_key :id
+        expect(sight[:type]).to eq('tourist_sight')
+        expect(sight[:attributes]).to be_a Hash
+        expect(sight[:attributes].keys).to eq(%i[name address place_id])
+        expect(sight[:attributes].values).to all(be_a String)
+      end
     end
   end
 end
