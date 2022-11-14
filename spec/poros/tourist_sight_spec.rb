@@ -56,6 +56,7 @@ RSpec.describe 'TouristSight PORO' do
     expect(sight.name).to eq(data[:properties][:name])
     expect(sight.address).to eq(data[:properties][:formatted])
     expect(sight.place_id).to eq(data[:properties][:place_id])
+    expect(sight)
     expect(sight.instance_variables.count).to eq 3
   end
 end
