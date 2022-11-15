@@ -3,7 +3,7 @@ class VideoService
     response = conn.get('/youtube/v3/search?') do |req|
       req.params['q'] = "#{country}"
     end
-    JSON.parse(response.body, symbolize_names: true)
+    this = JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.conn

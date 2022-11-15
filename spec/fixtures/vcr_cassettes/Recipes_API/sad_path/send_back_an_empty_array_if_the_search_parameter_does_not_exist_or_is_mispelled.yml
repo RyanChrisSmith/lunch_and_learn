@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.edamam.com/api/recipes/v2?app_id=81d26543&app_key=262130f91261a8e0ddf43423db417fec&q=zzzzzzzzz&type=public
+    uri: https://api.edamam.com/api/recipes/v2?app_id=20d03121&app_key=e7c6b6e570d82f449b3136a61862350e&q=zzzzzzzzz&type=public
     body:
       encoding: US-ASCII
       string: ''
@@ -21,49 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 14 Nov 2022 23:27:10 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '49'
-      Connection:
-      - keep-alive
-      Cache-Control:
-      - private
-      Expires:
-      - Thu, 01 Jan 1970 00:00:00 GMT
-      X-Served-By:
-      - ip-10-0-1-87.ec2.internal/10.0.1.87
-      Strict-Transport-Security:
-      - max-age=15552001
-      X-Request-Id:
-      - 62e1d455715854859a5c0db44dc58421
-    body:
-      encoding: UTF-8
-      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
-  recorded_at: Mon, 14 Nov 2022 23:27:10 GMT
-- request:
-    method: get
-    uri: https://api.edamam.com/api/recipes/v2?app_id=81d26543&app_key=262130f91261a8e0ddf43423db417fec&q=gerrrrmany&type=public
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Server:
-      - openresty
-      Date:
-      - Mon, 14 Nov 2022 23:27:10 GMT
+      - Tue, 15 Nov 2022 19:01:52 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -79,9 +37,51 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=15552001
       X-Request-Id:
-      - 4d5b9457cf48d0f9077a7123cbade93c
+      - f0b2646be830cb97c9512a49e6a05dfd
     body:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
-  recorded_at: Mon, 14 Nov 2022 23:27:10 GMT
+  recorded_at: Tue, 15 Nov 2022 19:01:52 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=20d03121&app_key=e7c6b6e570d82f449b3136a61862350e&q=gerrrrmany&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 15 Nov 2022 19:01:52 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-1-87.ec2.internal/10.0.1.87
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 18d353a8eaa7f7830aa0b78373345230
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Tue, 15 Nov 2022 19:01:52 GMT
 recorded_with: VCR 6.1.0
