@@ -47,7 +47,7 @@ RSpec.describe 'Learning Resource API requests' do
     end
   end
 
-  describe 'sad path' do
+  describe 'sad/edge path' do
     it 'will still search for the country when capitalized errently', :vcr do
       get '/api/v1/learning_resources?country=LAos'
       resources = JSON.parse(response.body, symbolize_names: true)
