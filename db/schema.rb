@@ -10,39 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_12_194415) do
-
+ActiveRecord::Schema.define(version: 20_221_112_194_415) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "favorites", force: :cascade do |t|
-    t.string "api_key"
-    t.string "country"
-    t.string "recipe_link"
-    t.string "recipe_title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.index ["user_id"], name: "index_favorites_on_user_id"
+  create_table 'favorites', force: :cascade do |t|
+    t.string 'api_key'
+    t.string 'country'
+    t.string 'recipe_link'
+    t.string 'recipe_title'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.bigint 'user_id'
+    t.index ['user_id'], name: 'index_favorites_on_user_id'
   end
 
-  create_table "recipes", force: :cascade do |t|
-    t.string "title"
-    t.string "url"
-    t.string "country"
-    t.string "image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'recipes', force: :cascade do |t|
+    t.string 'title'
+    t.string 'url'
+    t.string 'country'
+    t.string 'image'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "password_digest"
-    t.string "api_key"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'users', force: :cascade do |t|
+    t.string 'name'
+    t.string 'email'
+    t.string 'password_digest'
+    t.string 'api_key'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
 
-  add_foreign_key "favorites", "users"
+  add_foreign_key 'favorites', 'users'
 end

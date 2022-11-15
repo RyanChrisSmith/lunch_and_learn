@@ -15,7 +15,7 @@ class Api::V1::FavoritesController < ApplicationController
 
   def destroy
     Favorite.destroy(params[:id])
-    render json: { success: 'Favorite has been removed'}, status: 202
+    render json: { success: 'Favorite has been removed' }, status: 202
   end
 
   private
@@ -27,6 +27,7 @@ class Api::V1::FavoritesController < ApplicationController
   def find_user
     @user = User.find_by(api_key: params[:api_key])
     return unless @user.nil?
+
     render json: { error: { details: 'That api_key does not exist' } }, status: 404
   end
 end
