@@ -3,16 +3,11 @@ require 'rails_helper'
 RSpec.describe 'Favorites API' do
   before :each do
     @karl = User.create!(name: 'Jim', email: 'jims@home.com', password: 'password', password_confirmation: 'password')
-    @user = User.create!(name: 'How many', email: 'testsareneeded@home.com', password: 'password',
-                         password_confirmation: 'password')
-    Favorite.create!(api_key: @user.api_key, country: 'thailand', recipe_link: 'https://www.tastingtable.com/.....',
-                     recipe_title: 'Tom Kha Gai (Chicken in Coconut Soup)', user_id: @user.id)
-    Favorite.create!(api_key: @user.api_key, country: 'mexico', recipe_link: 'https://www.tastingtable.com/.....',
-                     recipe_title: 'Tacos', user_id: @user.id)
-    @fav = Favorite.create!(api_key: @user.api_key, country: 'belgium',
-                            recipe_link: 'https://www.tastingtable.com/.....', recipe_title: 'Salad', user_id: @user.id)
-    Favorite.create!(api_key: @user.api_key, country: 'canada', recipe_link: 'https://www.tastingtable.com/.....',
-                     recipe_title: 'Poutine fries', user_id: @user.id)
+    @user = User.create!(name: 'How many', email: 'testsareneeded@home.com', password: 'password', password_confirmation: 'password')
+    @fav = Favorite.create!(api_key: @user.api_key, country: 'belgium', recipe_link: 'https://www.tastingtable.com/.....', recipe_title: 'Salad', user_id: @user.id)
+    Favorite.create!(api_key: @user.api_key, country: 'thailand', recipe_link: 'https://www.tastingtable.com/.....', recipe_title: 'Tom Kha Gai (Chicken in Coconut Soup)', user_id: @user.id)
+    Favorite.create!(api_key: @user.api_key, country: 'mexico', recipe_link: 'https://www.tastingtable.com/.....', recipe_title: 'Tacos', user_id: @user.id)
+    Favorite.create!(api_key: @user.api_key, country: 'canada', recipe_link: 'https://www.tastingtable.com/.....', recipe_title: 'Poutine fries', user_id: @user.id)
   end
 
   describe 'Happy path' do

@@ -13,6 +13,7 @@ RSpec.describe 'Recipes PORO' do
 
     final = Recipe.new(recipe, country)
 
+    expect(final).to be_a Recipe
     expect(final.title).to eq(recipe[:recipe][:label])
     expect(final.url).to eq(recipe[:recipe][:url])
     expect(final.image).to eq(recipe[:recipe][:image])

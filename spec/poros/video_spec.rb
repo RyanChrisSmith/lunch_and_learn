@@ -27,6 +27,7 @@ RSpec.describe 'Video PORO' do
 
     final = Video.new(video_data)
 
+    expect(final).to be_a Video
     expect(final.title).to eq(video_data[:snippet][:title])
     expect(final.youtube_video_id).to eq(video_data[:id][:videoId])
     expect(final.instance_variables).to eq(%i[@title @youtube_video_id])

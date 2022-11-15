@@ -15,6 +15,7 @@ RSpec.describe 'LearningResource PORO' do
 
     final = LearningResource.new(country, video, images)
 
+    expect(final).to be_a LearningResource
     expect(final.country).to eq(country)
     expect(final.video).to eq(video)
     expect(final.images).to eq(images)
