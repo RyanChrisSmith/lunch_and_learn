@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe 'Recipes API' do
   describe 'happy path' do
-
     it 'sends a list of recipes from a specified country', :vcr do
       get '/api/v1/recipes?country=thailand'
       thai_recipes = JSON.parse(response.body, symbolize_names: true)
@@ -43,7 +42,7 @@ RSpec.describe 'Recipes API' do
     end
 
     it "will return a random country's recipes if search params are empty", :vcr do
-      allow(CountryService).to receive(:random_country).and_return("thailand")
+      allow(CountryService).to receive(:random_country).and_return('thailand')
       get '/api/v1/recipes?country='
       recipes = JSON.parse(response.body, symbolize_names: true)
 
@@ -106,5 +105,4 @@ RSpec.describe 'Recipes API' do
       end
     end
   end
-
 end

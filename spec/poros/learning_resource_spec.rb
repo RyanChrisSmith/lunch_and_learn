@@ -8,7 +8,6 @@ RSpec.describe 'LearningResource PORO' do
       Video.new(data)
     end
 
-
     response = ImagesService.get_images(country)
     images = response[:results].map do |image_data|
       Image.new(image_data)

@@ -6,11 +6,8 @@ class RecipeFacade
 
   def self.random
     country = CountryService.random_country
-    results = RecipeService.find_recipes(country)
-    collect_recipes(results, country)
+    search(country)
   end
-
-  private
 
   def self.collect_recipes(results, country)
     results[:hits].map do |recipe|

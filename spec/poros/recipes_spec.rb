@@ -9,7 +9,7 @@ RSpec.describe 'Recipes PORO' do
         url: 'https://www.seriouseats.com/recipes/2013/11/andy-rickers-naam-cheuam-naam-taan-piip-palm-sugar-simple-syrup.html',
         image: 'https://fakeimage'
       }
-  }
+    }
 
     final = Recipe.new(recipe, country)
 

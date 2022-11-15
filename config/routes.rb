@@ -9,7 +9,7 @@ Rails.application.routes.draw do
       resources :recipes, only: :index
       resources :learning_resources, only: :index
       resources :users, only: :create
-      resources :favorites, only: [:create, :index]
+      resources :favorites, only: %i[create index]
       resource :favorites, only: :destroy
       resources :tourist_sights, only: :index
       resources :sessions

@@ -32,7 +32,7 @@ RSpec.describe 'tourist sights API' do
       france_sights = JSON.parse(response.body, symbolize_names: true)
 
       get '/api/v1/tourist_sights?country=Latvia'
-      latvia_sights = JSON.parse(response.body, symbolize_names:true)
+      latvia_sights = JSON.parse(response.body, symbolize_names: true)
 
       first_france = france_sights[:data].first
       first_latvia = latvia_sights[:data].first
@@ -40,8 +40,8 @@ RSpec.describe 'tourist sights API' do
       expect(first_france).to_not eq(first_latvia)
     end
 
-
-    it "will return a random country's tourists sights within a 20,000 meter radius of the capital city if no country param entered", :vcr do
+    it "will return a random country's tourists sights within a 20,000 meter radius of the capital city if no country param entered",
+       :vcr do
       allow(CountryService).to receive(:random_country).and_return('France')
 
       get '/api/v1/tourist_sights?country='

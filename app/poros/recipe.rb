@@ -10,5 +10,4 @@ class Recipe
     @image = recipe[:recipe][:image]
     @country = country
   end
-
 end

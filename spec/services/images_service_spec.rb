@@ -6,7 +6,6 @@ RSpec.describe 'ImagesService' do
     expect(images).to be_a Hash
     expect(images[:results]).to be_a Array
     images[:results].each do |image|
-
       expect(image).to have_key(:alt_description)
       expect(image[:alt_description]).to be_a String
 
@@ -14,6 +13,5 @@ RSpec.describe 'ImagesService' do
       expect(image[:urls]).to have_key(:raw)
       expect(image[:urls][:raw]).to be_a String
     end
-
   end
 end

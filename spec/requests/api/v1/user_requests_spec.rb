@@ -4,14 +4,14 @@ RSpec.describe 'User API' do
   describe 'happy path' do
     it 'upon registration, can recieve a POST request and return structured response', :vcr do
       user_params =
-      {
-        "name": 'Ronny Fantastic',
-        "email": 'ronny@fantastic.com',
-        "password": 'password',
-        "password_confirmation": 'password'
-      }
+        {
+          "name": 'Ronny Fantastic',
+          "email": 'ronny@fantastic.com',
+          "password": 'password',
+          "password_confirmation": 'password'
+        }
 
-      headers = {"CONTENT_TYPE" => "application/json"}
+      headers = { 'CONTENT_TYPE' => 'application/json' }
 
       post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
 
@@ -19,7 +19,7 @@ RSpec.describe 'User API' do
       expect(request.query_parameters).to eq({})
       expect(request.request_parameters).to include(user_params)
 
-      created_user = JSON.parse(response.body, symbolize_names: true )
+      created_user = JSON.parse(response.body, symbolize_names: true)
 
       expect(created_user).to have_key(:data)
 
@@ -43,17 +43,18 @@ RSpec.describe 'User API' do
   end
 
   describe 'sad path' do
-    it 'upon registration, can recieve a POST request with missing password an error response related to the password missing', :vcr do
+    it 'upon registration, can recieve a POST request with missing password an error response related to the password missing',
+       :vcr do
       user_params =
-      {
-        "name": 'Ronny Fantastic',
-        "email": 'ronny@fantastic.com'
-      }
+        {
+          "name": 'Ronny Fantastic',
+          "email": 'ronny@fantastic.com'
+        }
 
-      headers = {"CONTENT_TYPE" => "application/json"}
+      headers = { 'CONTENT_TYPE' => 'application/json' }
       post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
 
-      error = JSON.parse(response.body, symbolize_names: true )
+      error = JSON.parse(response.body, symbolize_names: true)
 
       expect(error).to have_key(:password)
       expect(error[:password]).to eq(["can't be blank"])
@@ -61,40 +62,41 @@ RSpec.describe 'User API' do
 
     it 'upon registration, can recieve a POST request without an email an error related to needing an email', :vcr do
       user_params =
-      {
-        "name": 'Ronny Fantastic',
-        "password": 'password',
-        "password_confirmation": 'password'
-      }
+        {
+          "name": 'Ronny Fantastic',
+          "password": 'password',
+          "password_confirmation": 'password'
+        }
 
-      headers = {"CONTENT_TYPE" => "application/json"}
+      headers = { 'CONTENT_TYPE' => 'application/json' }
       post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
 
-      error = JSON.parse(response.body, symbolize_names: true )
+      error = JSON.parse(response.body, symbolize_names: true)
 
       expect(error).to have_key(:email)
       expect(error[:email]).to eq(["can't be blank"])
     end
 
-    it 'upon registration, can recieve a POST request with an already used email and return an error of duplicate email', :vcr do
-      user = User.create!(name: 'Ronny Fantastic', email: 'ronny@fantastic.com', password: 'password', password_confirmation: 'password')
+    it 'upon registration, can recieve a POST request with an already used email and return an error of duplicate email',
+       :vcr do
+      user = User.create!(name: 'Ronny Fantastic', email: 'ronny@fantastic.com', password: 'password',
+                          password_confirmation: 'password')
       user_params =
-      {
-        "name": 'I am a thief',
-        "email": 'ronny@fantastic.com',
-        "password": 'password',
-        "password_confirmation": 'password'
-      }
+        {
+          "name": 'I am a thief',
+          "email": 'ronny@fantastic.com',
+          "password": 'password',
+          "password_confirmation": 'password'
+        }
 
-      headers = {"CONTENT_TYPE" => "application/json"}
+      headers = { 'CONTENT_TYPE' => 'application/json' }
 
       post '/api/v1/users', headers: headers, params: JSON.generate(user_params)
 
-      error = JSON.parse(response.body, symbolize_names: true )
+      error = JSON.parse(response.body, symbolize_names: true)
 
       expect(error).to have_key(:email)
-      expect(error[:email]).to eq(["has already been taken"])
+      expect(error[:email]).to eq(['has already been taken'])
     end
   end
-
 end

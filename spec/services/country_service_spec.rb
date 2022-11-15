@@ -8,7 +8,7 @@ RSpec.describe 'CountryService' do
   end
 
   it 'can get the country and lat long', :vcr do
-    country = "France"
+    country = 'France'
     result = CountryService.lat_long(country)
 
     expect(result).to be_a Array

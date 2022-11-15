@@ -4,7 +4,7 @@ RSpec.describe TouristSightsService do
   describe 'happy path' do
     it 'can get all the tourist sights within a 20,000 meter radius', :vcr do
       lat_long = CountryService.lat_long('France')
-      sights = TouristSightsService.get_sights(lat_long[0],lat_long[1])
+      sights = TouristSightsService.get_sights(lat_long[0], lat_long[1])
 
       expect(sights).to be_a Hash
       expect(sights).to have_key(:features)

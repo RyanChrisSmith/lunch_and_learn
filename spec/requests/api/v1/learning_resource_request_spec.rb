@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe 'Learning Resource API requests' do
   describe 'happy path' do
-
     it 'returns videos and images related to country search', :vcr do
       get '/api/v1/learning_resources?country=laos'
       resources = JSON.parse(response.body, symbolize_names: true)
@@ -41,7 +40,7 @@ RSpec.describe 'Learning Resource API requests' do
       get '/api/v1/learning_resources?country=sdlkfjalskjdflkasjdlfkj'
       resources = JSON.parse(response.body, symbolize_names: true)
 
-      expect(resources[:data][:attributes][:country]).to eq("sdlkfjalskjdflkasjdlfkj")
+      expect(resources[:data][:attributes][:country]).to eq('sdlkfjalskjdflkasjdlfkj')
 
       expect(resources[:data][:attributes][:video]).to eq([])
       expect(resources[:data][:attributes][:images]).to eq([])

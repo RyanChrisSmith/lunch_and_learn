@@ -9,7 +9,7 @@ RSpec.describe RecipeFacade do
   end
 
   it '#.random', :vcr do
-    allow(CountryService).to receive(:random_country).and_return("thailand")
+    allow(CountryService).to receive(:random_country).and_return('thailand')
     random = RecipeFacade.random
 
     expect(random).to be_a Array

@@ -3,22 +3,27 @@ require 'rails_helper'
 RSpec.describe 'Favorites API' do
   before :each do
     @karl = User.create!(name: 'Jim', email: 'jims@home.com', password: 'password', password_confirmation: 'password')
-    @user = User.create!(name: 'How many', email: 'testsareneeded@home.com', password: 'password', password_confirmation: 'password')
-    Favorite.create!(api_key: @user.api_key, country: 'thailand', recipe_link: "https://www.tastingtable.com/.....", recipe_title: 'Tom Kha Gai (Chicken in Coconut Soup)', user_id: @user.id)
-    Favorite.create!(api_key: @user.api_key, country: 'mexico', recipe_link: "https://www.tastingtable.com/.....", recipe_title: 'Tacos', user_id: @user.id)
-    @fav = Favorite.create!(api_key: @user.api_key, country: 'belgium', recipe_link: "https://www.tastingtable.com/.....", recipe_title: 'Salad', user_id: @user.id)
-    Favorite.create!(api_key: @user.api_key, country: 'canada', recipe_link: "https://www.tastingtable.com/.....", recipe_title: 'Poutine fries', user_id: @user.id)
+    @user = User.create!(name: 'How many', email: 'testsareneeded@home.com', password: 'password',
+                         password_confirmation: 'password')
+    Favorite.create!(api_key: @user.api_key, country: 'thailand', recipe_link: 'https://www.tastingtable.com/.....',
+                     recipe_title: 'Tom Kha Gai (Chicken in Coconut Soup)', user_id: @user.id)
+    Favorite.create!(api_key: @user.api_key, country: 'mexico', recipe_link: 'https://www.tastingtable.com/.....',
+                     recipe_title: 'Tacos', user_id: @user.id)
+    @fav = Favorite.create!(api_key: @user.api_key, country: 'belgium',
+                            recipe_link: 'https://www.tastingtable.com/.....', recipe_title: 'Salad', user_id: @user.id)
+    Favorite.create!(api_key: @user.api_key, country: 'canada', recipe_link: 'https://www.tastingtable.com/.....',
+                     recipe_title: 'Poutine fries', user_id: @user.id)
   end
 
   describe 'Happy path' do
     it 'will create a favorite recipe with api key', :vcr do
       fav_params = {
         "api_key": @user.api_key,
-        "country": "germany",
-        "recipe_link": "https://www.tastingtable.com/.....",
-        "recipe_title": "Bratwurst"
+        "country": 'germany',
+        "recipe_link": 'https://www.tastingtable.com/.....',
+        "recipe_title": 'Bratwurst'
       }
-      headers = { "CONTENT_TYPE" => 'application/json' }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
 
       post '/api/v1/favorites', headers: headers, params: JSON.generate(fav_params)
 
@@ -29,14 +34,14 @@ RSpec.describe 'Favorites API' do
       expect(request.request_parameters).to include(fav_params)
 
       expect(new_favorite).to have_key(:success)
-      expect(new_favorite[:success]).to eq("Favorite added successfully")
+      expect(new_favorite[:success]).to eq('Favorite added successfully')
     end
 
     it 'can retrieve a list of favorites by the api key', :vcr do
       body = {
         api_key: @user.api_key
       }
-      headers = { "CONTENT_TYPE" => "application/json" }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
 
       get '/api/v1/favorites', headers: headers, params: body
 
@@ -71,7 +76,7 @@ RSpec.describe 'Favorites API' do
       body = {
         api_key: @karl.api_key
       }
-      headers = { "CONTENT_TYPE" => "application/json" }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
 
       get '/api/v1/favorites', params: body
       expect(response).to be_successful
@@ -86,16 +91,16 @@ RSpec.describe 'Favorites API' do
       body = {
         id: @fav.id
       }
-      headers = { "CONTENT_TYPE" => "application/json" }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
 
       current_count = Favorite.count
 
-      delete "/api/v1/favorites", params: body
+      delete '/api/v1/favorites', params: body
 
       expect(Favorite.count).to eq(current_count - 1)
 
       expect(response).to be_successful
-      expect{Favorite.find(@fav.id).to raise_error(ActiveRecord::RecordNotFound)}
+      expect { Favorite.find(@fav.id).to raise_error(ActiveRecord::RecordNotFound) }
     end
   end
 
@@ -103,11 +108,11 @@ RSpec.describe 'Favorites API' do
     it 'cannot create a favorite with the wrong API key', :vcr do
       fav_params = {
         "api_key": @user.api_key.chop,
-        "country": "germany",
-        "recipe_link": "https://www.tastingtable.com/.....",
-        "recipe_title": "Bratwurst"
+        "country": 'germany',
+        "recipe_link": 'https://www.tastingtable.com/.....',
+        "recipe_title": 'Bratwurst'
       }
-      headers = { "CONTENT_TYPE" => 'application/json' }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
 
       post '/api/v1/favorites', headers: headers, params: JSON.generate(fav_params)
 
@@ -120,11 +125,11 @@ RSpec.describe 'Favorites API' do
 
     it 'cannot create a favorite without an API key', :vcr do
       fav_params = {
-        "country": "germany",
-        "recipe_link": "https://www.tastingtable.com/.....",
-        "recipe_title": "Bratwurst"
+        "country": 'germany',
+        "recipe_link": 'https://www.tastingtable.com/.....',
+        "recipe_title": 'Bratwurst'
       }
-      headers = { "CONTENT_TYPE" => 'application/json' }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
 
       post '/api/v1/favorites', headers: headers, params: JSON.generate(fav_params)
 
@@ -135,5 +140,4 @@ RSpec.describe 'Favorites API' do
       expect(last_favorite.country).to_not eq(fav_params[:country])
     end
   end
-
-  end
+end

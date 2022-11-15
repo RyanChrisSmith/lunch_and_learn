@@ -9,7 +9,7 @@ class Api::V1::FavoritesController < ApplicationController
   def create
     favorite = Favorite.create(favorite_params)
     favorite.user_id = @user.id
-    render json: {success: 'Favorite added successfully'}, status: 201
+    render json: { success: 'Favorite added successfully' }, status: 201
   end
 
   def destroy
@@ -24,8 +24,8 @@ class Api::V1::FavoritesController < ApplicationController
 
   def find_user
     @user = User.find_by(api_key: params[:api_key])
-    if @user.nil?
-      render json: { error: { details: 'That api_key does not exist'}}, status: 404
-    end
+    return unless @user.nil?
+
+    render json: { error: { details: 'That api_key does not exist' } }, status: 404
   end
 end
